@@ -1,2 +1,2 @@
 # rustafrica.org
- website for Rust Africa
+ The website can be found at https://rustafrica.org.
