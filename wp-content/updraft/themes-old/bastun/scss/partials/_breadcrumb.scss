@@ -1,0 +1,43 @@
+.breadcrumbarea{
+    padding: 120px 0;
+    background-position: center center !important;
+    @media #{$device-lg} {
+        padding: 50px 0;
+    }
+    @media #{$device-md} {
+        padding: 50px 0;
+    }
+    @media #{$device-sm} {
+        padding: 50px 0;
+    }
+    &__title{
+        h2{
+            font-size: 60px;
+            font-weight: 700;
+            color: var(--whiteColor);
+            @media #{$device-lg} {
+                font-size: 30px;
+                margin-bottom: 5px;
+            }
+            @media #{$device-md} {
+                font-size: 30px;
+                margin-bottom: 5px;
+            }
+            @media #{$device-sm} {
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+
+        }
+    }
+    &__inner{
+        ul{
+            li{
+                color: var(--whiteColor);
+                a{
+                    color: var(--whiteColor);  
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,484 @@
+<?php
+namespace BdevsElementor\Widget;
+
+use Elementor\Controls_Manager;
+use Elementor\Group_Control_Typography;
+use Elementor\Scheme_Typography;
+use Elementor\Group_Control_Border;
+use Elementor\Group_Control_Box_Shadow;
+
+/**
+ * Bdevs Elementor Widget.
+ *
+ * Elementor widget that inserts an embbedable content into the page, from any given URL.
+ *
+ * @since 1.0.0
+ */
+class BdevsServiceHome2 extends \Elementor\Widget_Base {
+
+	/**
+	 * Get widget name.
+	 *
+	 * Retrieve Bdevs Elementor widget name.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 *
+	 * @return string Widget name.
+	 */
+	public function get_name() {
+		return 'bdevs-service-home2';
+	}
+
+	/**
+	 * Get widget title.
+	 *
+	 * Retrieve Bdevs Elementor widget title.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 *
+	 * @return string Widget title.
+	 */
+	public function get_title() {
+		return __( 'Service Home 2', 'bdevs-elementor' );
+	}
+
+	/**
+	 * Get widget icon.
+	 *
+	 * Retrieve Bdevs Slider widget icon.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 *
+	 * @return string Widget icon.
+	 */
+	public function get_icon() {
+		return 'eicon-slideshow';
+	}
+
+	/**
+	 * Get widget categories.
+	 *
+	 * Retrieve the list of categories the Bdevs Slider widget belongs to.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 *
+	 * @return array Widget categories.
+	 */
+	public function get_categories() {
+		return [ 'home-2-elementor' ];
+	}
+
+	public function get_keywords() {
+		return [ 'Service', 'carousel' ];
+	}
+
+	public function get_script_depends() {
+		return [ 'bdevs-elementor'];
+	}
+	public function get_post_titles_options() {
+		$title_options = [];
+		$args = [
+			'post_type'      => 'service',
+			'posts_per_page' => -1,
+			'post_status'    => 'publish',
+		];
+		$posts = get_posts($args);
+		if ($posts) {
+			foreach ($posts as $post) {
+				$title_options[$post->ID] = $post->post_title;
+			}
+		}
+		return $title_options;
+	}
+	// BDT Position
+	protected function element_pack_position() {
+	    $position_options = [
+	        ''              => esc_html__('Default', 'bdevs-elementor'),
+	        'top-left'      => esc_html__('Top Left', 'bdevs-elementor') ,
+	        'top-center'    => esc_html__('Top Center', 'bdevs-elementor') ,
+	        'top-right'     => esc_html__('Top Right', 'bdevs-elementor') ,
+	        'center'        => esc_html__('Center', 'bdevs-elementor') ,
+	        'center-left'   => esc_html__('Center Left', 'bdevs-elementor') ,
+	        'center-right'  => esc_html__('Center Right', 'bdevs-elementor') ,
+	        'bottom-left'   => esc_html__('Bottom Left', 'bdevs-elementor') ,
+	        'bottom-center' => esc_html__('Bottom Center', 'bdevs-elementor') ,
+	        'bottom-right'  => esc_html__('Bottom Right', 'bdevs-elementor') ,
+	    ];
+
+	    return $position_options;
+	}
+
+	protected function _register_controls() {
+		$title_options = $this->get_post_titles_options();
+		$this->start_controls_section(
+			'section_content_Servicehome2',
+			[
+				'label' => esc_html__( 'Service Home 2', 'bdevs-elementor' ),
+			]
+		);
+		$this->add_control(
+			'bg_image',
+			[
+				'label'       => __( 'Background Image', 'bdevs-elementor' ),
+				'type'    => Controls_Manager::MEDIA,
+				'dynamic' => [ 'active' => true ],			
+			]
+		);
+		$this->add_control(
+			'subheading',
+			[
+				'label'       => __( 'Subheading', 'bdevs-elementor' ),
+				'type'        => Controls_Manager::TEXT,
+				'placeholder' => __( 'Enter your Subheading', 'bdevs-elementor' ),
+				'default'     => __( 'Our Service', 'bdevs-elementor' ),
+				'label_block' => true,
+			]
+		);
+		$this->add_control(
+			'heading',
+			[
+				'label'       => __( 'Heading', 'bdevs-elementor' ),
+				'type'        => Controls_Manager::TEXT,
+				'placeholder' => __( 'Enter your heading', 'bdevs-elementor' ),
+				'default'     => __( 'WE OFFER CONSULTANCY SERVICES.', 'bdevs-elementor' ),
+				'label_block' => true,
+			]
+		);	
+			
+		
+		$repeater = new \Elementor\Repeater();
+			$repeater->add_control(
+				'title_post',
+				[
+					'label'     	=> esc_html__( 'Choose Service', 'bdevs-elementor' ),
+					'type'      	=> Controls_Manager::SELECT,
+					'options'   	=> $title_options,
+					'default'   	=> array_key_first($title_options),
+				]
+			);
+			$repeater->add_control(
+				'img_service',
+				[
+					'label' 		=> esc_html__( 'Image Service', 'bdevs-elementor' ),
+					'type' 			=> Controls_Manager::MEDIA,
+					'default' 		=> [
+						'url' 			=> '',
+					],
+				]
+			);
+			$repeater->add_control(
+				'icon_image',
+				[
+					'label' 		=> esc_html__( 'Icon Image', 'bdevs-elementor' ),
+					'type' 			=> Controls_Manager::ICONS,
+					'default' 		=> [
+					],
+				]
+			);
+			$repeater->add_control(
+				'title_edit',
+				[
+					'label'       	=> __( 'Title Service Custom - If this field is empty, it will be used title Service', 'bdevs-elementor' ),
+					'type'        	=> Controls_Manager::TEXTAREA,
+					'placeholder' 	=> __( 'Enter your text title service custom', 'bdevs-elementor' ),
+					'default'     	=> __( '', 'bdevs-elementor' ),
+					'label_block' 	=> true,
+				]
+			);
+			$repeater->add_control(
+				'excerpt_edit',
+				[
+					'label'       	=> __( 'Excerpt Service Custom - If this field is empty, it will be used Excerpt Service', 'bdevs-elementor' ),
+					'type'        	=> Controls_Manager::TEXTAREA,
+					'placeholder' 	=> __( 'Enter your text excerpt service custom', 'bdevs-elementor' ),
+					'default'     	=> __( '', 'bdevs-elementor' ),
+					'label_block' 	=> true,
+				]
+			);
+			$repeater->add_control(
+				'icon',
+				[
+					'label' 		=> esc_html__( 'Icon Service', 'bdevs-elementor' ),
+					'type' 			=> Controls_Manager::ICONS,
+					'default' 		=> [
+						'url' 			=> '',
+					],
+				]
+			);
+		$this->add_control(
+			'tabs',
+			[
+				'label' 		=> esc_html__( 'Tab List Service Post', 'bdevs-elementor' ),
+				'type' 			=> Controls_Manager::REPEATER,
+				'fields' 		=> $repeater->get_controls(),
+				'default' 		=> [
+					[
+						
+					],
+				],
+			]
+		);
+		
+		
+		$this->end_controls_section();
+
+
+		$this->start_controls_section(
+			'section_content_videohome2',
+			[
+				'label' => esc_html__( 'Video Home 2', 'bdevs-elementor' ),
+			]
+		);
+		$this->add_control(
+			'image_video',
+			[
+				'label'       => __( 'Image Video', 'bdevs-elementor' ),
+				'type'    => Controls_Manager::MEDIA,
+				'dynamic' => [ 'active' => true ],			
+			]
+		);
+		$this->add_control(
+			'heading_video',
+			[
+				'label'       => __( 'Heading Video', 'bdevs-elementor' ),
+				'type'        => Controls_Manager::TEXT,
+				'placeholder' => __( 'Enter your heading Video', 'bdevs-elementor' ),
+				'default'     => __( 'INTRO VIDEO', 'bdevs-elementor' ),
+				'label_block' => true,
+			]
+		);	
+		$this->add_control(
+			'image_icon',
+			[
+				'label'       => __( 'Image Icon', 'bdevs-elementor' ),
+				'type'    => Controls_Manager::MEDIA,
+				'dynamic' => [ 'active' => true ],			
+			]
+		);
+		$this->add_control(
+			'video',
+			[
+				'label'       => __( 'Link Video', 'bdevs-elementor' ),
+				'type'        => Controls_Manager::TEXT,
+				'placeholder' => __( 'Enter your Link Video', 'bdevs-elementor' ),
+				'default'     => __( 'https://www.youtube.com/watch?v=gLb2Gbo_bbs', 'bdevs-elementor' ),
+				'label_block' => true,
+			]
+		);
+		$this->add_control(
+			'icon_video',
+			[
+				'label'       => __( 'Icon Video', 'bdevs-elementor' ),
+				'type'    => Controls_Manager::ICONS,
+				'default' 		=> [
+						'url' 			=> '',
+					],		
+			]
+		);	
+		
+		$this->end_controls_section();
+		$this->start_controls_section(
+			'section_content_layout',
+			[
+				'label' => esc_html__( 'Layout', 'bdevs-elementor' ),
+			]
+		);
+
+		$this->add_responsive_control(
+			'align',
+			[
+				'label'   => esc_html__( 'Alignment', 'bdevs-elementor' ),
+				'type'    => Controls_Manager::CHOOSE,
+				'options' => [
+					'left' => [
+						'title' => esc_html__( 'Left', 'bdevs-elementor' ),
+						'icon'  => 'fa fa-align-left',
+					],
+					'center' => [
+						'title' => esc_html__( 'Center', 'bdevs-elementor' ),
+						'icon'  => 'fa fa-align-center',
+					],
+					'right' => [
+						'title' => esc_html__( 'Right', 'bdevs-elementor' ),
+						'icon'  => 'fa fa-align-right',
+					],
+					'justify' => [
+						'title' => esc_html__( 'Justified', 'bdevs-elementor' ),
+						'icon'  => 'fa fa-align-justify',
+					],
+				],
+				'prefix_class' => 'elementor%s-align-',
+				'description'  => 'Use align to match position',
+				'default'      => 'left',
+			]
+		);
+		$this->add_control(
+			'show_service',
+			[
+				'label'   => esc_html__( 'Show Service', 'bdevs-elementor' ),
+				'type'    => Controls_Manager::SWITCHER,
+				'default' => 'yes',
+			]
+		);
+		$this->add_control(
+			'show_video',
+			[
+				'label'   => esc_html__( 'Show Video', 'bdevs-elementor' ),
+				'type'    => Controls_Manager::SWITCHER,
+				'default' => 'yes',
+			]
+		);	
+
+		$this->end_controls_section();
+
+	}
+
+	public function render() {
+
+		$settings  = $this->get_settings_for_display();
+		extract($settings);
+		?>  
+<div class="service__video__sec__wrap" style="background: var(--pinkcolor) url(<?php print esc_url($settings['bg_image']['url']); ?>);">
+	<?php if (( $settings['show_service'] )) : ?>
+    <!-- service__section__start -->
+    <div class="service__2 sp_top_140 sp_bottom_70 special__spacing" id="service__area">
+        <div class="container">
+            <div class="row" data-aos="fade-up" data-aos-duration="1500">
+                <div class="col-xl-12">
+                    <div class="section__title text-center sp_bottom_50">
+                    	<?php if ('' != $settings['subheading']): ?>
+                        <div class="section__title__button">
+                            <span class="text__gradient"><?php echo wp_kses_post($settings['subheading']); ?></span>
+                        </div>
+                        <?php endif ?>
+                        <?php if ('' != $settings['heading']): ?>
+                        <div class="section__title__heading">
+                            <h3><?php echo wp_kses_post($settings['heading']); ?></h3>
+                        </div>
+                        <?php endif ?>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            	<?php
+				$i = 0;
+				foreach ( $settings['tabs'] as $item ) :
+					$i++;
+				?>
+				<?php 
+				$post_id = $item['title_post'];
+				$wp_query = new \WP_Query(array(
+					'post_type' => 'service',
+					'p'	=> $post_id,
+					'post_status' => 'publish',
+				));
+				while ($wp_query -> have_posts()) : $wp_query -> the_post();
+				?>
+				<?php if($i%3 == 1){?>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos-duration="1500">
+                <?php } elseif($i%3 == 2){?>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos-duration="1800">
+                <?php } else { ?>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos-duration="2100">
+                <?php }  ?>
+                    <div class="service__single__wraper service__single__wraper--2 common__gradient__bg single__transform">
+                        <div class="service__single__inner">
+                            <div class="service__img">
+                            	<?php if ('' != $item['img_service']['url']) { ?>
+                                <img src="<?php echo wp_kses_post($item['img_service']['url']); ?>" alt="">
+                                <?php } else { ?>
+                                <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id());?>" alt="">
+                                <?php } ?>
+                                <div class="service__bg__img">
+                                    <?php \Elementor\Icons_Manager::render_icon( $item['icon_image'], [ 'aria-hidden' => 'true' ] ); ?>
+                                </div>
+                            </div>
+                            <div class="service__content">
+                            	<?php if ('' != $item['title_edit']) { ?>
+                                <div class="service__heading">
+                                    <h5><a href="<?php the_permalink(); ?>"><?php echo wp_kses_post($item['title_edit']); ?></a></h5>
+                                </div>
+                                <?php } else { ?>
+                                <div class="service__heading">
+                                    <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                                </div>
+	                            <?php } ?>
+	                            <?php if ('' != $item['excerpt_edit']) { ?>
+                                <div class="service__text">
+                                    <p><?php echo wp_kses_post($item['excerpt_edit']); ?></p>
+                                </div>
+                                <?php } else { ?>
+                                <div class="service__text">
+                                    <p><?php if(isset($bastun_redux_demo['service_excerpt'])){?>
+		                            <?php echo esc_attr(bastun_excerpt2($bastun_redux_demo['service_excerpt'])); ?>
+		                            <?php }else{?>
+		                            <?php echo esc_attr(bastun_excerpt2(10)); } ?></p>
+                                </div>
+                                <?php } ?>
+                            </div>
+                            <?php if ( ! empty( $item['icon']['value'] ) ) { ?>
+                            <div class="service__icon service__icon--2">
+                                <a class="direction__btn direction__btn--2" href="<?php the_permalink(); ?>">
+                                	<?php \Elementor\Icons_Manager::render_icon( $item['icon'], [ 'aria-hidden' => 'true' ] ); ?>
+                                </a>
+                            </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>   
+
+                <?php endwhile; ?>
+				<?php endforeach; ?>
+
+            
+            </div>
+        </div>
+
+    </div>
+    <!-- service__section__end -->
+    <?php endif; ?>
+	<?php if (( $settings['show_video'] )) : ?>
+    <!-- video__section__start -->
+    <div class="video__2 sp_bottom_140">
+        <div class="container">
+            <div class="video__border sp_top_70">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="video__img position-relative" data-aos="fade-up" data-aos-duration="1500">
+    						<?php if ( '' !== $settings['heading_video'] )  : ?>
+                            <div class="video__text video__text--1">
+                                <h2><?php echo wp_kses_post($settings['heading_video']); ?></h2>
+                            </div>
+                            <?php endif; ?>
+                            <?php if ( '' !== $settings['image_video']['url'] )  : ?>
+                            <img src="<?php print esc_url($settings['image_video']['url']); ?>" alt="">
+                            <?php endif; ?>
+                            <?php if ( '' !== $settings['image_icon']['url'] )  : ?>
+                            <div class="video__small__img">
+                                <img src="<?php print esc_url($settings['image_icon']['url']); ?>" alt="">
+                            </div>
+                            <?php endif; ?>
+                            <div class="video__button">
+                                <a class="video__card--link glightbox" data-gallery="video_popup"
+                                    href="<?php print esc_url($settings['video']); ?>">
+                                    <?php \Elementor\Icons_Manager::render_icon( $settings['icon_video'], [ 'aria-hidden' => 'true' ] ); ?>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- video__section__end -->
+    <?php endif; ?>
+</div>
+	<?php
+	}
+
+}

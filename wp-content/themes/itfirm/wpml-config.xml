@@ -1,0 +1,19 @@
+<wpml-config>
+    <admin-texts>
+        <key name="ct_theme_options">
+            <key name="ptitle_text_highlight" />
+            <key name="search_field_placeholder" />
+            <key name="archive_readmore_text" />
+            <key name="portfolio_slug" />
+            <key name="portfolio_name" />
+            <key name="portfolio_category_slug" />
+            <key name="portfolio_category_name" />
+            <key name="archive_portfolio_link" />
+            <key name="service_slug" />
+            <key name="service_name" />
+            <key name="service_category_slug" />
+            <key name="service_category_name" />
+            <key name="archive_service_link" />
+        </key>
+    </admin-texts>
+</wpml-config>

@@ -1,0 +1,11 @@
+<?php
+
+class CT_CtIconSearch_Widget extends Case_Theme_Core_Widget_Base{
+    protected $name = 'ct_icon_search';
+    protected $title = 'Case Search';
+    protected $icon = 'eicon-search';
+    protected $categories = array( 'case-theme-core' );
+    protected $params = '{"sections":[{"name":"source_section","label":"Source Settings","tab":"content","controls":[{"name":"layout","label":"Layout","type":"select","options":{"1":"Form","2":"Popup"},"default":"1"},{"name":"style","label":"Layout","type":"select","options":{"style1":"Style 1","style2":"Style 2","style3":"Style 3"},"default":"style1","condition":{"layout":["2"]}},{"name":"search_text","label":"Search Text","type":"text","condition":{"layout":["1"]}},{"name":"search_text_color","label":"Text Color","type":"color","selectors":{"{{WRAPPER}}":"color: {{VALUE}};"},"condition":{"layout":["1"]}},{"name":"search_text_typo","label":"Text Typography","type":"typography","control_type":"group","selector":"{{WRAPPER}}","condition":{"layout":["1"]}},{"name":"selected_icon","label":"Icon","type":"icons","fa4compatibility":"icon","condition":{"layout":["2"]}},{"name":"box_color","label":"Box Color","type":"color","selectors":{"{{WRAPPER}} .ct-search-popup1":"background-color: {{VALUE}};"},"condition":{"layout":["2"],"style":["style1"]}},{"name":"icon_color_gr_from","label":"Icon Color Gradient From","type":"color","condition":{"layout":["2"],"style":["style1"]}},{"name":"icon_color_gr_to","label":"Icon Color Gradient To","type":"color","condition":{"layout":["2"],"style":["style1"]}},{"name":"icon_color","label":"Icon Color","type":"color","selectors":{"{{WRAPPER}} .ct-search-popup1.style2":"color: {{VALUE}};"},"condition":{"layout":["2"],"style":["style2"]}},{"name":"icon_color_hover","label":"Icon Color Hover","type":"color","selectors":{"{{WRAPPER}} .ct-search-popup1.style2:hover":"color: {{VALUE}};"},"condition":{"layout":["2"],"style":["style2"]}},{"name":"icon_typography","label":"Icon Typography","type":"typography","control_type":"group","selector":"{{WRAPPER}} .ct-search-popup1.style2","condition":{"layout":["2"],"style":["style2"]}}]}]}';
+    protected $styles = array(  );
+    protected $scripts = array( 'ct-inline-css-js' );
+}

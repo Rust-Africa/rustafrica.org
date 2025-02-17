@@ -1,0 +1,67 @@
+:root {
+    // color
+    --bodyColor: #222222;
+    --bodyBg: #fff;
+    --whiteColor: #ffffff;
+    --blackColor: #0A0624;
+    --blackBlue: #110C34;
+    --headingColor: #222222;
+    --contentColor: #5F6C76;
+    --primaryColor: #FE0094;
+    --secondaryColor: #18239D;
+    --greyColor: #EDEDED;
+    --borderColor: #eeeeee;
+    --borderColor2: #EACADF;
+    --borderColor3: #ccc;
+    --navyBlue:#18239D;
+    --navyBlue2:#221C49;
+    --pinkcolor:#FFF0FA;
+    --violet:#6E1299;
+    --yellow: #FF912C;
+
+    --gradientColor : linear-gradient(90deg, #00229E 0%, #6E1299 47.92%, #FE0094 100%);
+    --gradientColor2:linear-gradient(180deg, rgba(8, 21, 42, 0.00) 0%, #08152A 100%);
+    --gradientColor3: linear-gradient(90deg, #0F259E 0%, rgba(255, 255, 255, 0.00) 100%);
+
+    //--boxshadow1:0px 16px 32px 0px rgb(0 0 0 / 4%);
+    //--boxshadow2:0px 0px 0px 8px rgb(255 255 255 / 20%);
+
+    --borderRadius: 8px;
+    --borderRadius2: 5px;
+    --transition: .3s;
+    
+    //--gradientColor2 :  linear-gradient(3.98deg, rgba(0, 0, 0, 0) 3.24%, var(--blackColor) 93.62%);
+    //--defaultShadow : 4px 4px 60px rgba(99, 69, 237, 0.2);
+    --bodyFont: 'Inter', sans-serif;
+    --headingFont: 'Inter', sans-serif;
+    --contentFont: 'Inter', sans-serif;
+    --buttonFont: 'Source Sans Pro';
+
+}
+
+.is_dark {
+    --bodyColor: #fff;
+    --bodyBg: #0C0E2B;
+    --headingColor: #fff;
+    --contentColor: #fff;
+    --blackColor: #fff;        
+    --whiteColor: #0C0E2B;
+    --borderColor: #312a57;
+    --borderColor2: #342a51;
+    --darkShadow: 0 0 20px 5px rgba(95, 45, 237, 0.1);
+    --pinkcolor:#170f2f;
+    --blackBlue:#fff;
+    --navyBlue2: #fff
+}
+
+
+
+// Responsive Variables
+$device-xxl: '(min-width: 1500px) and (max-width: 1920px)';
+$device-xl: '(min-width: 1366px) and (max-width: 1499px)';
+$device-lg: '(min-width: 992px) and (max-width: 1365px)';
+$device-lg2: '(min-width: 1200px) and (max-width: 1365px)';
+$device-md: '(min-width: 768px) and (max-width: 991px)';
+$device-sm:'(max-width: 767px)';
+$device-sm-large:'(min-width: 576px) and (max-width: 767px)';
+$device-sm-small:'(min-width: 320px) and (max-width: 575px)';

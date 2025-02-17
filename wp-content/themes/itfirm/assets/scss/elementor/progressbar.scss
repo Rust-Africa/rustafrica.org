@@ -1,0 +1,170 @@
+.ct-progressbar1 {
+    &.style1 {
+        .ct-progress-bar {
+            height: 5px;
+            position: relative;
+            width: 0;
+            @include transition(width 1.4s ease);
+            background-color: $primary_color;
+            @include border-radius(5px);
+            &:before {
+                content: '';
+                position: absolute;
+                top: -5px;
+                right: 0;
+                width: 15px;
+                height: 15px;
+                background-color: $primary_color;
+                @include border-radius(15px);
+            }
+        }
+        .ct-progress-bar-wrap {
+            background-color: #888888;
+            @include border-radius(5px);
+        }
+        .ct-progress-percentage {
+            position: absolute;
+            top: -33px;
+            right: -10px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #333333;
+            @include font-family-heading($heading_default_font);
+            @media #{$max-xs} {
+                top: auto;
+                bottom: -33px;
+            }
+        }
+        .ct-progress-title {
+            font-size: 18px;
+            color: #333333;
+            margin-bottom: 10px;
+            @media #{$max-xs} {
+
+            }
+        }
+        .ct-progress-item {
+            + .ct-progress-item {
+                margin-top: 20px;
+                @media #{$max-xs} {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+
+    &.style2 {
+        .ct-progress-bar {
+            height: 4px;
+            position: relative;
+            width: 0;
+            @include transition(width 1.4s ease);
+            background-color: $primary_color;
+            @include border-radius(4px);
+        }
+        .ct-progress-bar-wrap {
+            background-color: transparent;
+            height: 8px;
+            border-radius: 8px;
+            border: 1px solid $primary_color;
+            padding: 1px;
+            margin-left: 2px;
+        }
+        .ct-progress-percentage {
+            position: absolute;
+            top: -37px;
+            right: -12px;
+            font-size: 16px;
+            color: #555555;
+            font-weight: 400;
+            letter-spacing: 0.025em;
+        }
+        .ct-progress-title {
+            font-size: 16px;
+            color: #555555;
+            font-weight: 400;
+            letter-spacing: 0.025em;
+            margin-bottom: 14px;
+            @media #{$max-xs} {
+
+            }
+        }
+        .ct-progress-item {
+            + .ct-progress-item {
+                margin-top: 27px;
+            }
+        }
+    }
+}
+
+.ct-progressbar2 {
+    .ct-progress-bar {
+        height: 6px;
+        position: relative;
+        width: 0;
+        @include transition(width 1.4s ease);
+        background-color: $primary_color;
+        @include border-radius(6px);
+    }
+    .ct-progress-bar-wrap {
+        background-color: #f0eff7;
+        @include border-radius(6px);
+    }
+    .ct-progress-percentage {
+        font-size: 14px;
+        font-weight: 700;
+        color: #2e2d2d;
+        @include font-family-heading($heading_default_font);
+    }
+    .ct-progress-title {
+        font-size: 14px;
+        margin-bottom: 0px;
+        color: #2e2d2d;
+        margin-right: 20px;
+        flex-grow: 1;
+    }
+    .ct-progress-bar-meta {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 12px;
+    }
+    .ct-progress-item {
+        + .ct-progress-item {
+            margin-top: 30px;
+        }
+    }
+}
+
+.ct-progressbar3 {
+    .ct-progress-bar {
+        height: 5px;
+        position: relative;
+        width: 0;
+        @include transition(width 1.4s ease);
+        background-color: $primary_color;
+        border-radius: 5px;
+        svg {
+            position: absolute;
+            top: -6px;
+            right: -8px;
+            fill: #f5f5f5;
+        }
+    }
+    .ct-progress-bar-wrap {
+        background-color: #f5f5f5;
+        border-radius: 5px;
+    }
+    .ct-progress-title {
+        font-size: 17px;
+        margin-bottom: 11px;
+        span {
+            font-weight: 400;
+        }
+    }
+    .ct-progress-item {
+        + .ct-progress-item {
+            margin-top: 29px;
+        }
+    }
+}

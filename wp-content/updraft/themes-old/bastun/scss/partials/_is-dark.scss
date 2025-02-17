@@ -1,0 +1,617 @@
+/*------------------------------
+Dark Mode
+-------------------------------*/
+
+.is_dark {
+    .mode_switcher.my_switcher button {
+        color: var(--blackColor);
+        background: var(--whiteColor);
+        border-color: var(--blackColor);
+    }
+    .headerarea__main__menu ul li a {
+        color: var(--blackColor);
+    }
+    .headerarea__submenu {
+        background-color: var(--whiteColor);
+    }
+    .headerarea__mega__menu__thumb__title {
+        color: var(--blackColor);
+    }
+    .headerarea__submenu--five {
+        background: var(--whiteColor);
+    }
+    .headerarea__main__menu ul li:hover > a {
+        color: var(--primaryColor);
+    }
+    .offcanvas__header--menu__open--svg {
+        color: var(--blackColor);
+    }
+
+
+
+    .default__button {
+        color: var(--blackColor);
+    }
+    .default__button.btn__white {
+        border: 1px solid var(--blackColor);
+    }
+    .herobanner__title h1 {
+        color: var(--blackColor);
+    }
+    .herobanner__text p {
+        color: var(--blackColor);
+    }
+    .slider__controls__arrows .arrow-btn {
+        color: var(--blackColor);
+        border: 2px solid var(--blackColor);
+    }
+
+    .slider__controls__arrows .arrow-btn-2:hover svg path {
+        stroke: var(--blackColor);
+    }
+
+    .slider__controls__arrows .arrow-btn-3:hover svg path {
+        stroke: var(--blackColor);
+    }
+
+    .service__single__wraper {
+        box-shadow: var(--darkShadow);
+    }
+    .service__single__wraper:hover .service__heading h5 a {
+        color: var(--blackColor);
+    }
+    .service__single__wraper:hover .service__text p {
+        color: var(--blackColor);
+    }
+    .service__single__wraper:hover .service__icon a {
+        background: var(--blackColor);
+    }
+    .video__img::before {
+        background: var(--whiteColor);
+    }
+    .video__button a:hover svg path {
+        fill: var(--blackColor);
+    }
+    .about__number__inner span {
+        color: var(--blackColor);
+    }
+    .about__number__inner p {
+        color: var(--blackColor);
+    }
+    .about__number__icon a svg path {
+        stroke: var(--blackColor);
+    }
+    .team__left .section__title__heading h3 {
+        color: var(--blackColor);
+    }
+    .team__left .section__title__text p {
+        color: var(--blackColor);
+    }
+    .team__name h6 a {
+        color: var(--blackColor);
+    }
+    .team__name span {
+        color: var(--blackColor);
+    }
+    .project__margin {
+        box-shadow: var(--darkShadow);
+    }
+    .project__bottom {
+        border-bottom: none;
+    }
+    .direction__btn:hover svg path {
+        stroke: var(--blackColor);
+    }
+    .blog__date__inner {
+        box-shadow: var(--darkShadow);
+    }
+    .blog__single:hover .blog__date__inner span {
+        color: var(--blackColor);
+    }
+    .blog__single:hover .blog__date__inner p {
+        color: var(--blackColor);
+    }
+    .footer__menu__title h6 {
+        color: var(--blackColor);
+    }
+    .footer__menu__title h6:after {
+        background: var(--blackColor);
+    }
+    .footer__menu ul li a {
+        color: var(--blackColor);
+    }
+    .footer__menu ul li a:hover {
+        color: var(--primaryColor);
+    }
+    .footer__text p {
+        color: var(--blackColor);
+    }
+    .copyright__left p {
+        color: var(--blackColor);
+    }
+    .footer__icon ul li a:hover {
+        color: var(--blackColor);
+    }
+    .copyright__right ul li a {
+        color: var(--blackColor);
+    }
+    .copyright__right ul li a:hover {
+        color: var(--primaryColor);
+    }
+    .footer__input input {
+        color: var(--blackColor);
+        box-shadow: var(--darkShadow);
+    }
+    .copyright--2::before {
+        background: var(--whiteColor);
+        border-right: 5px solid var(--blackColor);
+    }
+
+    .herobanner.herobanner--2 {
+        background-image: none !important;
+    }
+    .header__topbar__left ul li {
+        color: var(--blackColor);
+    }
+    .header__topbar__right p {
+        color: var(--blackColor);
+    }
+    .default__button.btn__white:hover {
+        color: var(--blackColor);
+        border: 1px solid var(--blackColor);
+    }
+
+    .headerarea__bar__wrapper svg rect {
+        fill:var(--blackColor);
+    }
+
+
+
+
+    .brand--2 {
+        background: var(--whiteColor);
+        box-shadow: var(--darkShadow);
+    }
+    .default__button.btn__black {
+        background: transparent;
+    }
+    .default__button.btn__black:hover {
+        background: var(--primaryColor);
+        border-color: var(--primaryColor);
+    }
+
+
+
+    .video__2{
+        .video__img {
+            box-shadow: var(--darkShadow);
+        }
+    }
+    .facts__single__counter .counter__number {
+        color: var(--blackColor);
+    }
+    .facts__single__counter .counter__number span {
+        color: var(--blackColor);
+    }
+    .facts__single__counter p {
+        color: var(--blackColor);
+    }
+    .project__heading--2 h3 a {
+        color: var(--blackColor);
+    }
+    .project__heading h3 a:hover {
+        color: var(--primaryColor);
+    }
+    .section__title--3 .section__title__heading h3 {
+        color: var(--blackColor);
+    }
+    .section__title--3 .section__title__button span {
+        color: var(--blackColor);
+    }
+    .blog__2__heading h3 a {
+        color: var(--blackColor);
+    }
+    .blog__2__text p {
+        color: var(--blackColor);
+    }
+    .footer__2 {
+        background-image: none !important;
+    }
+    .header__animate__item h3 {
+        color: var(--blackColor);
+    }
+    .headerarea.headerarea--3 {
+        background: var(--whiteColor)
+    }
+
+    .bg__black .section__title--3 .section__title__button span {
+        color: var(--whiteColor);
+    }
+    .bg__black .section__title--3 .section__title__heading h3 {
+        color: var(--whiteColor);
+    }
+    .direction__btn--2 svg path {
+        stroke: var(--blackColor);
+    }
+    .team__member__3__single:hover .team__member__name h6 a {
+        color: var(--blackColor);
+    }
+    .team__member__3__single:hover .team__member__name p {
+        color: var(--blackColor);
+    }
+    .team__member__icon ul li a:hover {
+        color: var(--blackColor);
+    }
+    .working__heading h5 {
+        color: var(--blackColor);
+    }
+    .working__paragraph p {
+        color: var(--blackColor);
+    }
+
+    .team__member__single__4 {
+        box-shadow: var(--darkShadow);
+    }
+    .service__single__4 {
+        box-shadow: var(--darkShadow);
+    }
+    .team__member__content__4 span {
+        color: var(--blackColor);
+    }
+    .team__member__single__4:hover .team__member__content__4 h6 a {
+        color: var(--blackColor);
+    }
+    .team__member__single__4:hover .team__member__content__4 span {
+        color: var(--blackColor);
+    }
+
+    .section__title--4 .section__title__heading h3 {
+        color: var(--blackColor);
+    }
+    .section__title--4 .section__title__small span {
+        color: var(--blackColor);
+    }
+    .section__title--4 .section__title__small span::before {
+        background: var(--blackColor);
+    }
+    .portfolio__filter button span {
+        color: var(--blackColor);
+    }
+    .portfolio__content {
+        background: var(--whiteColor);
+    }
+    .portfolio__content a {
+        color: var(--blackColor);
+    }
+    .portfolio__content a:hover {
+        color: var(--primaryColor);
+    }
+    .portfolio__content span {
+        color: var(--blackColor);
+    }
+    .pricing__tab li button {
+        color: var(--blackColor);
+    }
+    .pricing__single__price span {
+        color: var(--blackColor);
+    }
+    .pricing__single__text ul li {
+        color: var(--blackColor);
+    }
+    .pricing__small__button span {
+        color: var(--blackColor);
+    }
+    .footer__4__small__text span {
+        color: var(--blackColor);
+    }
+    .footer__4__heading h1 {
+        color: var(--blackColor);
+    }
+    .headerarea__icon ul li a, .headerarea__icon ul li button {
+        color: var(--blackColor);
+    }
+    .copyright__arrow a:hover {
+        color: var(--blackColor);
+    }
+    .offcanvas {
+        background-color: var(--whiteColor);
+    }
+    .btn-close {
+        background-color: var(--blackColor);
+    }
+    .headerarea__offcavas__form .form-group input {
+    padding: 5px 20px;
+    }
+    .headerarea__offcavas__form .form-group button {
+        right: 20px;
+    }
+    .section__title--3 .blog__4__section__title__text p {
+        color: var(--blackColor);
+    }
+    .blog__4__time p {
+        background: var(--blackColor);
+    }
+    .footer__3.bg__black {
+        background: var(--whiteColor);
+    }
+    .breadcrumbarea__title h2 {
+        color: var(--blackColor);
+    }
+    .breadcrumbarea__inner ul li,.breadcrumbarea__inner ul li a {
+        color: var(--blackColor);
+    }
+    .breadcrumbarea__inner ul li a:hover {
+        color: var(--primaryColor);
+    }
+    .sidebar__common__input {
+        border: 1px solid #232e4c;
+    }
+    .blog__details__small__button span {
+        color: var(--blackColor);
+    }
+    .blog__details__list ul li {
+        color: var(--blackColor);
+    }
+    .blog__details__text--2 p {
+        color: var(--blackColor);
+    }
+    .blog__details__share span {
+        color: var(--blackColor);
+    }
+    .blog__details__social__icon ul li a {
+        background: #4e5073;
+    }
+    .footer__icon ul li a {
+        background: #4e5073;
+    }
+    .team__member__icon ul li a {
+        background: #4e5073;
+    }
+    .blog__details__social__icon ul li a:hover span {
+        color: var(--blackColor);
+    }
+    .sidebar__tag ul li a.active {
+        color: var(--blackColor);
+    }
+    .sidebar__tag ul li a:hover {
+        color: var(--blackColor);
+    }
+    .sidebar__search .sidebar__common__input {
+        color: var(--blackColor);
+    }
+    .pagination ul li a.active {
+        color: var(--blackColor);
+        border: 1px solid transparent;
+    }
+    .pagination ul li a {
+        box-shadow: var(--darkShadow);
+        border: 1px solid #282e43;
+        &:hover{
+            color: var(--blackColor);
+            border: 1px solid transparent;
+        }
+    }
+    .cartarea__plus__minus .input-qty.input-qty {
+        background: transparent;
+        color:var(--blackColor);
+    }
+    .cartarea__clear a,.cartarea__shiping__update a,.cartarea__grand__totall a {
+        background-color: transparent;
+        color: var(--blackColor);
+        border: 1px solid var(--borderColor2);
+        &:hover{
+            color: var(--primaryColor);
+        }
+    }
+    .cartarea__discount__code textarea {
+        color:var(--blackColor);
+    }
+    .contact__common__input {
+        color: var(--blackColor);
+    }
+    .contact__text p {
+        color: var(--blackColor);
+    }
+    .contact__text h6 {
+        color: var(--blackColor);
+    }
+    .contact__icon span {
+        background: var(--blackColor);
+    }
+    .faq__accordion .accordion-item h2 button {
+        color: var(--blackColor);
+    }
+    .accordion-item {
+        background-color: var(--whiteColor);
+    }
+    .featurearea__price span.featurearea__price__button {
+        color: var(--blackColor);
+    }
+    .featurearea__price span.featurearea__price__button.black__color {
+        color: var(--whiteColor);
+    }
+    .featurearea__countdown .count p {
+        color: var(--blackColor);
+    }
+    .featurearea__countdown .count span {
+        color: var(--blackColor);
+    }
+    .featurearea__bottom__button a:hover {
+        color: var(--blackColor);
+    }
+    .gridarea__wraper {
+        box-shadow: var(--darkShadow);
+    }
+    .gridarea__wraper .gridarea__img .gridarea__small__button .grid__badge {
+        color: var(--blackColor);
+    }
+    .gridarea__wraper .gridarea__img .gridarea__small__icon i {
+        color: var(--blackColor);
+    }
+    .product__grid__action ul li a:hover, 
+    .product__grid__action ul li button:hover {
+        color: var(--blackColor);
+    }
+    .tabcollectionarea__product__item__link {
+        color: var(--blackColor);
+    }
+    .tabcollectionarea__product__item__link.active,
+    .tabcollectionarea__product__item__link:hover {
+        color: var(--primaryColor);
+    }
+    .project__details__sidebar__heading h6 {
+        color: var(--blackColor);
+    }
+    .project__details__sidebar__list ul li span {
+        color: var(--blackColor);
+    }
+    .project__details__sidebar__list ul li p {
+        color: var(--blackColor);
+    }
+    .shopsidebar__widget {
+        box-shadow: var(--darkShadow);
+    }
+    .product__grid__action ul li svg {
+        color: var(--blackColor);
+    }
+    .work__process__single {
+        background: rgb(161 183 207 / 20%);
+    }
+
+
+    .bg__black .slider__controls__arrows--3 .arrow-btn {
+        color: var(--whiteColor);
+        border: 2px solid var(--whiteColor);
+        svg path{
+            stroke: var(--whiteColor);
+        }
+        &:hover{
+            svg path{
+                stroke: var(--blackColor);
+            } 
+        }
+    }
+
+    .bg__black .testimonial__3 {
+        background: #f3f5f5;
+    }
+
+    .bg__black .section__title--3.blog__4__padding__right .section__title__heading h3{
+        color: var(--blackColor);
+    }
+    .bg__black .section__title--3.blog__4__padding__right .section__title__button span {
+        color: var(--blackColor);
+        border-color: var(--blackColor);
+    }
+    .bg__black .footer__3 {
+        background: var(--whiteColor)
+    }
+
+    .bg__black .testimonial__3 .slider__controls__arrows .arrow-btn {
+        color: var(--whiteColor);
+        border: 2px solid var(--whiteColor);
+        svg path{
+            stroke: var(--whiteColor);
+        }
+        &:hover{
+            svg path{
+                stroke: var(--blackColor);
+            } 
+        }
+    }
+
+    .bg__black .herobanner__arrow__1.herobanner__arrow__1--2.slider__controls__arrows .arrow-btn {
+        color: var(--whiteColor);
+        border: 2px solid var(--whiteColor);
+        svg path{
+            stroke: var(--whiteColor);
+        }
+        &:hover{
+            svg path{
+                stroke: var(--blackColor);
+            } 
+        }
+    }
+    .video__text h2 {
+        -webkit-text-stroke-color: rgba(255, 255, 255, 1);
+    }
+    .about__list ul li {
+        color: var(--blackColor);
+    }
+
+    .headerarea--5.bg__black{
+        background: var(--whiteColor);
+    }
+
+    .herobanner__button .video__button a:hover {
+        border: 1px solid var(--primaryColor);
+    }
+    .herobanner__button .video__button span {
+        color: var(--blackColor);
+    }
+
+    .team__member__3__single {
+        box-shadow: var(--darkShadow);
+    }
+    .service__features__wrap {
+        box-shadow: var(--darkShadow);
+    }
+    .about__hiring__list ul li {
+        color: var(--blackColor);
+    }
+    .herobannerarea__price span {
+        color: var(--blackColor);
+    }
+
+    .bg__black .about__list ul li {
+        color: var(--whiteColor);
+    }
+    .bg__black .about__list ul li i {
+        color: var(--blackColor);
+    }
+
+    .bg__black .herobanner__content__wrapper--2 .herobanner__title h1 {
+        color: var(--whiteColor);
+    }
+    .bg__black .herobanner__content__wrapper--2 .herobanner__text p {
+        color: var(--whiteColor);
+    }
+
+    .bg__black .pricing__single__text ul li {
+        color: var(--whiteColor);
+    }
+
+    .herobanner.herobanner__margin {
+        box-shadow: var(--darkShadow);
+    }
+    .animate__content__item--2 h3 {
+        -webkit-text-stroke-color: var(--blackColor);
+    }
+    .bg__black .contact__common__input {
+        color: var(--whiteColor);
+    }
+    .bg__black .headerarea__icon ul li a {
+        color: var(--whiteColor);
+    }
+    .bg__black .sticky .headerarea__icon ul li a {
+        color: var(--blackColor);
+    }
+    .bg__black .headerarea__icon.headerarea__offcavas__icon ul li a {
+        color: var(--blackColor);
+    }
+    .bg__black  .headerarea--4.header__sticky.sticky {
+        background: var(--whiteColor);
+    }
+    .business__strategy__tab {
+        box-shadow: var(--darkShadow);
+    }
+    .loginarea__wraper {
+        box-shadow: var(--darkShadow);
+    }
+    .loginarea form .loginarea__form label {
+        color: var(--blackColor);
+    }
+    .loginarea form .loginarea__form .common__login__input {
+        color: var(--blackColor);
+    }
+}

@@ -1,0 +1,216 @@
+@font-face {
+  font-family: "Caseicon";
+  src: url("../fonts/caseicon.eot");
+  src: url("../fonts/caseicon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/caseicon.woff2") format("woff2"),
+       url("../fonts/caseicon.woff") format("woff"),
+       url("../fonts/caseicon.ttf") format("truetype"),
+       url("../fonts/caseicon.svg#caseicon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Caseicon";
+    src: url("../fonts/caseicon.svg#Caseicon") format("svg");
+  }
+}
+
+[class^="caseicon-"], [class*=" caseicon-"] {
+  display: inline-block;
+}
+
+[class^="caseicon-"]:before, [class*=" caseicon-"]:before,
+[class^="caseicon-"]:after, [class*=" caseicon-"]:after {   
+  font-family: Caseicon;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.caseicon-android:before {
+    content: "\f101";
+}
+.caseicon-angle-arrow-down:before {
+    content: "\f102";
+}
+.caseicon-angle-arrow-left:before {
+    content: "\f103";
+}
+.caseicon-angle-arrow-right:before {
+    content: "\f104";
+}
+.caseicon-angle-arrow-up:before {
+    content: "\f105";
+}
+.caseicon-arrows-updown:before {
+    content: "\f106";
+}
+.caseicon-behance:before {
+    content: "\f107";
+}
+.caseicon-calendar-alt:before {
+    content: "\f108";
+}
+.caseicon-calendar:before {
+    content: "\f109";
+}
+.caseicon-caret-arrow-down:before {
+    content: "\f10a";
+}
+.caseicon-caret-arrow-up:before {
+    content: "\f10b";
+}
+.caseicon-check:before {
+    content: "\f10c";
+}
+.caseicon-clock:before {
+    content: "\f10d";
+}
+.caseicon-close-alt:before {
+    content: "\f10e";
+}
+.caseicon-close:before {
+    content: "\f10f";
+}
+.caseicon-comment-solid:before {
+    content: "\f110";
+}
+.caseicon-comment:before {
+    content: "\f111";
+}
+.caseicon-double-chevron-down:before {
+    content: "\f112";
+}
+.caseicon-double-chevron-left:before {
+    content: "\f113";
+}
+.caseicon-double-chevron-right:before {
+    content: "\f114";
+}
+.caseicon-double-chevron-up:before {
+    content: "\f115";
+}
+.caseicon-dribbble:before {
+    content: "\f116";
+}
+.caseicon-envelope:before {
+    content: "\f117";
+}
+.caseicon-facebook:before {
+    content: "\f118";
+}
+.caseicon-grid:before {
+    content: "\f119";
+}
+.caseicon-heart-alt:before {
+    content: "\f11a";
+}
+.caseicon-home:before {
+    content: "\f11b";
+}
+.caseicon-instagram:before {
+    content: "\f11c";
+}
+.caseicon-left-arrow:before {
+    content: "\f11d";
+}
+.caseicon-linkedin:before {
+    content: "\f11e";
+}
+.caseicon-list:before {
+    content: "\f11f";
+}
+.caseicon-long-arrow-left:before {
+    content: "\f120";
+}
+.caseicon-long-arrow-right-three:before {
+    content: "\f121";
+}
+.caseicon-long-arrow-right-two:before {
+    content: "\f122";
+}
+.caseicon-long-arrow-right:before {
+    content: "\f123";
+}
+.caseicon-marker:before {
+    content: "\f124";
+}
+.caseicon-open-folder:before {
+    content: "\f125";
+}
+.caseicon-phone:before {
+    content: "\f126";
+}
+.caseicon-pinterest:before {
+    content: "\f127";
+}
+.caseicon-quote-bottom:before {
+    content: "\f128";
+}
+.caseicon-quote-left:before {
+    content: "\f129";
+}
+.caseicon-random:before {
+    content: "\f12a";
+}
+.caseicon-refresh-arrow:before {
+    content: "\f12b";
+}
+.caseicon-refresh:before {
+    content: "\f12c";
+}
+.caseicon-right-arrow:before {
+    content: "\f12d";
+}
+.caseicon-search:before {
+    content: "\f12e";
+}
+.caseicon-shopping-cart-alt:before {
+    content: "\f12f";
+}
+.caseicon-shopping-cart:before {
+    content: "\f130";
+}
+.caseicon-skype:before {
+    content: "\f131";
+}
+.caseicon-tags-alt:before {
+    content: "\f132";
+}
+.caseicon-tags:before {
+    content: "\f133";
+}
+.caseicon-tick:before {
+    content: "\f134";
+}
+.caseicon-tripadvisor:before {
+    content: "\f135";
+}
+.caseicon-tumblr:before {
+    content: "\f136";
+}
+.caseicon-twitter:before {
+    content: "\f137";
+}
+.caseicon-user-alt:before {
+    content: "\f138";
+}
+.caseicon-user:before {
+    content: "\f139";
+}
+.caseicon-view-alt:before {
+    content: "\f13a";
+}
+.caseicon-vimeo:before {
+    content: "\f13b";
+}
+.caseicon-yelp:before {
+    content: "\f13c";
+}
+.caseicon-youtube:before {
+    content: "\f13d";
+}
+.caseicon-zoom-in:before {
+    content: "\f13e";
+}

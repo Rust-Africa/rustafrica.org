@@ -1,0 +1,631 @@
+# Copyright (C) 2025 WPClever
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPC Smart Quick View for WooCommerce 4.1.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woo-smart-quick-view\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-01-16T15:09:12+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: woo-smart-quick-view\n"
+
+#. Plugin Name of the plugin
+msgid "WPC Smart Quick View for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wpclever.net/"
+msgstr ""
+
+#. Description of the plugin
+msgid "WPC Smart Quick View allows users to get a quick look of products without opening the product page."
+msgstr ""
+
+#. Author of the plugin
+msgid "WPClever"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wpclever.net"
+msgstr ""
+
+#: wpc-smart-quick-view.php:135
+msgid "Title"
+msgstr ""
+
+#: wpc-smart-quick-view.php:136
+msgid "Rating"
+msgstr ""
+
+#: wpc-smart-quick-view.php:137
+msgid "Price"
+msgstr ""
+
+#: wpc-smart-quick-view.php:138
+msgid "Short description"
+msgstr ""
+
+#: wpc-smart-quick-view.php:139
+msgid "Add to cart"
+msgstr ""
+
+#: wpc-smart-quick-view.php:140
+msgid "Meta"
+msgstr ""
+
+#: wpc-smart-quick-view.php:141
+msgid "Description"
+msgstr ""
+
+#: wpc-smart-quick-view.php:142
+msgid "Weight"
+msgstr ""
+
+#: wpc-smart-quick-view.php:143
+msgid "Dimensions"
+msgstr ""
+
+#: wpc-smart-quick-view.php:144
+msgid "Additional information"
+msgstr ""
+
+#: wpc-smart-quick-view.php:454
+#: wpc-smart-quick-view.php:1101
+msgid "View product details"
+msgstr ""
+
+#: wpc-smart-quick-view.php:505
+#: wpc-smart-quick-view.php:1061
+msgid "Quick view"
+msgstr ""
+
+#: wpc-smart-quick-view.php:548
+#: wpc-smart-quick-view.php:558
+msgid "WPC Smart Quick View"
+msgstr ""
+
+#: wpc-smart-quick-view.php:548
+msgid "Smart Quick View"
+msgstr ""
+
+#: wpc-smart-quick-view.php:558
+msgid "Premium"
+msgstr ""
+
+#. translators: stars
+#: wpc-smart-quick-view.php:561
+msgid "Thank you for using our plugin! If you are satisfied, please reward it a full five-star %s rating."
+msgstr ""
+
+#: wpc-smart-quick-view.php:563
+msgid "Reviews"
+msgstr ""
+
+#: wpc-smart-quick-view.php:564
+msgid "Changelog"
+msgstr ""
+
+#: wpc-smart-quick-view.php:565
+msgid "Discussion"
+msgstr ""
+
+#: wpc-smart-quick-view.php:570
+msgid "Settings updated."
+msgstr ""
+
+#: wpc-smart-quick-view.php:576
+#: wpc-smart-quick-view.php:1266
+msgid "Settings"
+msgstr ""
+
+#: wpc-smart-quick-view.php:579
+#: wpc-smart-quick-view.php:1052
+msgid "Localization"
+msgstr ""
+
+#: wpc-smart-quick-view.php:582
+#: wpc-smart-quick-view.php:1267
+msgid "Premium Version"
+msgstr ""
+
+#: wpc-smart-quick-view.php:585
+msgid "Essential Kit"
+msgstr ""
+
+#: wpc-smart-quick-view.php:624
+msgid "General"
+msgstr ""
+
+#: wpc-smart-quick-view.php:628
+msgid "Button type"
+msgstr ""
+
+#: wpc-smart-quick-view.php:631
+msgid "Button"
+msgstr ""
+
+#: wpc-smart-quick-view.php:632
+msgid "Link"
+msgstr ""
+
+#: wpc-smart-quick-view.php:637
+msgid "Use icon"
+msgstr ""
+
+#: wpc-smart-quick-view.php:641
+msgid "Icon on the left"
+msgstr ""
+
+#: wpc-smart-quick-view.php:642
+msgid "Icon on the right"
+msgstr ""
+
+#: wpc-smart-quick-view.php:643
+msgid "Icon only"
+msgstr ""
+
+#: wpc-smart-quick-view.php:644
+#: wpc-smart-quick-view.php:732
+#: wpc-smart-quick-view.php:751
+#: wpc-smart-quick-view.php:760
+#: wpc-smart-quick-view.php:770
+#: wpc-smart-quick-view.php:780
+#: wpc-smart-quick-view.php:815
+#: wpc-smart-quick-view.php:825
+#: wpc-smart-quick-view.php:835
+#: wpc-smart-quick-view.php:1036
+msgid "No"
+msgstr ""
+
+#: wpc-smart-quick-view.php:649
+msgid "Icon"
+msgstr ""
+
+#: wpc-smart-quick-view.php:660
+msgid "Extra CSS class (optional)"
+msgstr ""
+
+#: wpc-smart-quick-view.php:665
+msgid "Add extra CSS class for action button/link, split by one space."
+msgstr ""
+
+#: wpc-smart-quick-view.php:669
+msgid "Position"
+msgstr ""
+
+#: wpc-smart-quick-view.php:674
+msgid "Above title"
+msgstr ""
+
+#: wpc-smart-quick-view.php:675
+msgid "Under title"
+msgstr ""
+
+#: wpc-smart-quick-view.php:676
+msgid "Under rating"
+msgstr ""
+
+#: wpc-smart-quick-view.php:677
+msgid "Under price"
+msgstr ""
+
+#: wpc-smart-quick-view.php:678
+msgid "Above add to cart"
+msgstr ""
+
+#: wpc-smart-quick-view.php:679
+msgid "Under add to cart"
+msgstr ""
+
+#: wpc-smart-quick-view.php:680
+msgid "None (hide it)"
+msgstr ""
+
+#: wpc-smart-quick-view.php:698
+msgid "Shortcode"
+msgstr ""
+
+#. translators: shortcode
+#: wpc-smart-quick-view.php:700
+msgid "You can add the button by manually by using the shortcode %1$s, e.g. %2$s for the product with ID is 99."
+msgstr ""
+
+#: wpc-smart-quick-view.php:704
+msgid "View type"
+msgstr ""
+
+#: wpc-smart-quick-view.php:707
+msgid "Popup"
+msgstr ""
+
+#: wpc-smart-quick-view.php:708
+msgid "Sidebar"
+msgstr ""
+
+#: wpc-smart-quick-view.php:713
+msgid "Popup effect"
+msgstr ""
+
+#: wpc-smart-quick-view.php:716
+msgid "Fade"
+msgstr ""
+
+#: wpc-smart-quick-view.php:717
+msgid "Zoom in"
+msgstr ""
+
+#: wpc-smart-quick-view.php:718
+msgid "Zoom out"
+msgstr ""
+
+#: wpc-smart-quick-view.php:719
+msgid "Newspaper"
+msgstr ""
+
+#: wpc-smart-quick-view.php:720
+msgid "Move horizontal"
+msgstr ""
+
+#: wpc-smart-quick-view.php:721
+msgid "Move from top"
+msgstr ""
+
+#: wpc-smart-quick-view.php:722
+msgid "3d unfold"
+msgstr ""
+
+#: wpc-smart-quick-view.php:723
+msgid "Slide bottom"
+msgstr ""
+
+#: wpc-smart-quick-view.php:728
+msgid "Enable next/previous"
+msgstr ""
+
+#: wpc-smart-quick-view.php:731
+#: wpc-smart-quick-view.php:750
+#: wpc-smart-quick-view.php:759
+#: wpc-smart-quick-view.php:769
+#: wpc-smart-quick-view.php:779
+#: wpc-smart-quick-view.php:814
+#: wpc-smart-quick-view.php:824
+#: wpc-smart-quick-view.php:834
+#: wpc-smart-quick-view.php:1037
+msgid "Yes"
+msgstr ""
+
+#: wpc-smart-quick-view.php:734
+msgid "Enable the next/previous button to navigate to other products."
+msgstr ""
+
+#: wpc-smart-quick-view.php:738
+msgid "Sidebar position"
+msgstr ""
+
+#: wpc-smart-quick-view.php:741
+msgid "Right"
+msgstr ""
+
+#: wpc-smart-quick-view.php:742
+msgid "Left"
+msgstr ""
+
+#: wpc-smart-quick-view.php:747
+msgid "Sidebar heading"
+msgstr ""
+
+#: wpc-smart-quick-view.php:756
+msgid "Back to close"
+msgstr ""
+
+#: wpc-smart-quick-view.php:762
+msgid "Close the popup when pressing on the browser's back button."
+msgstr ""
+
+#: wpc-smart-quick-view.php:766
+msgid "Auto close"
+msgstr ""
+
+#: wpc-smart-quick-view.php:772
+msgid "Auto close the popup after adding a product to the cart."
+msgstr ""
+
+#: wpc-smart-quick-view.php:776
+msgid "Use perfect-scrollbar"
+msgstr ""
+
+#. translators: link
+#: wpc-smart-quick-view.php:782
+msgid "Read more about %s."
+msgstr ""
+
+#: wpc-smart-quick-view.php:786
+msgid "Categories"
+msgstr ""
+
+#: wpc-smart-quick-view.php:802
+msgid "All categories"
+msgstr ""
+
+#: wpc-smart-quick-view.php:807
+msgid "Only show the Quick View button for products in selected categories."
+msgstr ""
+
+#: wpc-smart-quick-view.php:811
+msgid "Enable for archive"
+msgstr ""
+
+#: wpc-smart-quick-view.php:817
+msgid "Enable quick view for products on shop/archive page."
+msgstr ""
+
+#: wpc-smart-quick-view.php:821
+msgid "Enable for mini-cart"
+msgstr ""
+
+#: wpc-smart-quick-view.php:827
+msgid "Enable quick view for products on mini-cart."
+msgstr ""
+
+#: wpc-smart-quick-view.php:831
+msgid "Enable for cart page"
+msgstr ""
+
+#: wpc-smart-quick-view.php:837
+msgid "Enable quick view for products on the cart page."
+msgstr ""
+
+#: wpc-smart-quick-view.php:842
+msgid "Content"
+msgstr ""
+
+#: wpc-smart-quick-view.php:849
+msgid "Images"
+msgstr ""
+
+#: wpc-smart-quick-view.php:852
+msgid "Product image & Product gallery images"
+msgstr ""
+
+#: wpc-smart-quick-view.php:853
+msgid "Product image"
+msgstr ""
+
+#: wpc-smart-quick-view.php:854
+msgid "Product gallery images"
+msgstr ""
+
+#: wpc-smart-quick-view.php:859
+msgid "Image size"
+msgstr ""
+
+#: wpc-smart-quick-view.php:890
+msgid "Product images effect"
+msgstr ""
+
+#: wpc-smart-quick-view.php:893
+msgid "None"
+msgstr ""
+
+#: wpc-smart-quick-view.php:894
+msgid "Fancybox"
+msgstr ""
+
+#: wpc-smart-quick-view.php:895
+msgid "Zoom"
+msgstr ""
+
+#: wpc-smart-quick-view.php:900
+msgid "Product summary"
+msgstr ""
+
+#: wpc-smart-quick-view.php:902
+msgid "Choose fields that you want to show on the quick view popup. You also can drag/drop to rearrange these fields."
+msgstr ""
+
+#: wpc-smart-quick-view.php:939
+#: wpc-smart-quick-view.php:983
+#: wpc-smart-quick-view.php:1403
+msgid "Custom attribute"
+msgstr ""
+
+#: wpc-smart-quick-view.php:943
+#: wpc-smart-quick-view.php:982
+#: wpc-smart-quick-view.php:1407
+msgid "Custom field"
+msgstr ""
+
+#: wpc-smart-quick-view.php:947
+#: wpc-smart-quick-view.php:984
+#: wpc-smart-quick-view.php:1411
+msgid "Custom text/shortcode"
+msgstr ""
+
+#: wpc-smart-quick-view.php:961
+msgid "Default"
+msgstr ""
+
+#: wpc-smart-quick-view.php:972
+msgid "Attributes"
+msgstr ""
+
+#: wpc-smart-quick-view.php:981
+msgid "Custom"
+msgstr ""
+
+#: wpc-smart-quick-view.php:987
+msgid "+ Add"
+msgstr ""
+
+#: wpc-smart-quick-view.php:993
+msgid "Add to cart button"
+msgstr ""
+
+#: wpc-smart-quick-view.php:996
+msgid "Like archive page"
+msgstr ""
+
+#: wpc-smart-quick-view.php:997
+msgid "Like single page"
+msgstr ""
+
+#: wpc-smart-quick-view.php:999
+msgid "Choose the functionally for the add to cart button."
+msgstr ""
+
+#: wpc-smart-quick-view.php:1003
+#: wpc-smart-quick-view.php:1090
+msgid "Suggested products"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1007
+msgid "Related products"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1010
+msgid "Upsells products"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1013
+msgid "Cross-sells products"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1016
+msgid "Wishlist"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1021
+msgid "Compare"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1033
+msgid "View details button"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1054
+msgid "Leave blank to use the default text and its equivalent translation in multiple languages."
+msgstr ""
+
+#: wpc-smart-quick-view.php:1058
+msgid "Button text"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1066
+msgid "Close"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1069
+#: wpc-smart-quick-view.php:1221
+msgid "Close (Esc)"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1074
+msgid "Next"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1077
+#: wpc-smart-quick-view.php:1223
+msgid "Next (Right arrow key)"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1082
+msgid "Previous"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1085
+#: wpc-smart-quick-view.php:1224
+msgid "Previous (Left arrow key)"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1093
+msgid "You may also like&hellip;"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1098
+msgid "View details text"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1283
+msgid "Community support"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1328
+msgid "Before thumbnails"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1329
+msgid "After thumbnails"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1330
+msgid "Before summary"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1331
+msgid "After summary"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1332
+msgid "Before title"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1333
+msgid "After title"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1334
+msgid "Before rating"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1335
+msgid "After rating"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1336
+msgid "Before price"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1337
+msgid "After price"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1338
+msgid "Before excerpt"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1339
+msgid "After excerpt"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1340
+msgid "Before meta"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1341
+msgid "After meta"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1342
+msgid "Before suggested products"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1343
+msgid "After suggested products"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1425
+msgid "move"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1439
+msgid "name"
+msgstr ""
+
+#: wpc-smart-quick-view.php:1442
+msgid "label"
+msgstr ""

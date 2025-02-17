@@ -1,0 +1,144 @@
+
+---Downloaded files---
+The import files for: Import Bastun were successfully downloaded!
+Initial max execution time = 300
+Files info:
+Site URL = https://rustafrica.org
+Data file = /home/u548435996/domains/rustafrica.org/public_html/wp-content/themes/bastun/sample-data/contents-demo.xml
+Widget file = /home/u548435996/domains/rustafrica.org/public_html/wp-content/themes/bastun/sample-data/widget-settings.json
+Customizer file = /home/u548435996/domains/rustafrica.org/public_html/wp-content/themes/bastun/sample-data/customizer-data.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Primary Sidebar : 
+
+Bastun Search - No Title - Imported
+Categories - Post category: - Imported
+Bastun Recent Posts - Recent Post: - Imported
+Tag Cloud - Popular Tags: - Imported
+
+Sidebar Service : 
+
+Bastun Search - No Title - Imported
+Custom HTML - All Services: - Imported
+Custom HTML - Download Brochure: - Imported
+
+Sidebar Shop : 
+
+Filter Products by Attribute - Availability - Imported
+Filter Products by Attribute - Product type - Imported
+Filter Products by Attribute - Brand - Imported
+Filter Products by Attribute - Color - Imported
+Product Categories - Size - Imported
+
+Sidebar Project : 
+
+Custom HTML - No Title - Imported
+Text - No Title - Imported
+Custom HTML - No Title - Imported
+
+Sidebar Page FAQ : 
+
+Bastun Search - No Title - Imported
+Categories - Post category: - Imported
+
+Footer One Widget : 
+
+Custom HTML - No Title - Imported
+
+Footer Two Widget : 
+
+Custom HTML - No Title - Imported
+
+Footer Three Widget : 
+
+Text - No Title - Imported
+
+Footer Four Widget : 
+
+Custom HTML - No Title - Imported
+
+Footer Five Widget : 
+
+Custom HTML - No Title - Imported
+
+Max Mega Menu Widgets : 
+
+Menu Item - Home 1 - Imported
+Menu Item - Home 2 - Imported
+Menu Item - Home 3 - Imported
+Menu Item - Home 4 - Imported
+Menu Item - Home 5 - Imported
+Menu Item - Home 6 - Imported
+Menu Item - Home 7 - Imported
+Menu Item - Home 8 - Imported
+Menu Item - Home 9 - Imported
+Menu Item - Home 10 - Imported
+Menu Item - Home 11 - Imported
+Menu Item - Home 12 - Imported
+Menu Item - Home 13 - Imported
+Menu Item - Home 14 - Imported
+Menu Item - Home 15 - Imported
+Menu Item - Home 16 - Imported
+Menu Item - Home 17 - Imported
+Menu Item - Home 18 - Imported
+Menu Item - Home 19 - Imported
+Menu Item - Home 20 - Imported
+Image - No Title - Imported
+
+
+
+---Importing customizer settings---
+Error: The customizer import file is not in a correct format. Please make sure to use the correct customizer import file.
+
+---ocdi/after_import---
+

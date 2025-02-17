@@ -1,0 +1,399 @@
+.btn,
+button,
+.button,
+input[type="submit"] {
+  @include font-family-heading($heading_default_font);
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+  padding: 0 38px;
+  line-height: 51px;
+  @include transition(all 180ms linear 0ms);
+  @include border-radius(0px);
+  position: relative;
+  overflow: hidden !important;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  z-index: 1;
+  letter-spacing: 0em;
+  @include box-shadow(none);
+  @include background-gradient-button(90deg, $gradient_color_from 0%, $gradient_color_to 50%, $gradient_color_from);
+  background-size: 200%, 1px;
+  background-position: 0%;
+  justify-content: center;
+  &:hover, &:focus, &:active, &:not([disabled]):not(.disabled).active, &:not([disabled]):not(.disabled):active {
+    outline: medium none;
+    text-decoration: none;
+    color: #fff;
+    @include background-gradient-button(90deg, $gradient_color_from 0%, $gradient_color_to 50%, $gradient_color_from);
+    background-position: 100%;
+  }
+}
+.btn {
+  &.btn-inline-flex {
+    display: inline-flex;
+    align-items: center;
+  }
+  .ct-align-icon-right {
+    float: right;
+    margin-left: 10px;
+  }
+  i.space-left {
+    margin-left: 10px;
+  }
+  i.space-right {
+    margin-right: 10px;
+  }
+  &.btn-reset {
+    line-height: 40px;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0px;
+  }
+  &.btn-animate {
+    &:before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      bottom: -20px;
+      right: -20px;
+      background: inherit;
+      z-index: -1;
+      opacity: 0.4;
+      -webkit-transform: scale3d(0.6, 0.5, 1);
+      transform: scale3d(0.6, 0.5, 1);
+      @include border-radius(inherit);
+    }
+    &:hover, &:focus {
+      -webkit-animation: btn-animate1 0.3s forwards;
+      animation: btn-animate1 0.3s forwards;
+      overflow: visible !important;
+      &:before {
+        -webkit-animation: btn-animate2 0.3s 0.3s forwards;
+        animation: btn-animate2 0.3s 0.3s forwards;
+      }
+    }
+  }
+  &.btn-secondary {
+    background: $secondary_color;
+    color: #fff;
+    &:hover, &:focus {
+      background: $primary_color;
+      color: $secondary_color;
+    }
+    &:not(:hover) i {
+      @extend .text-gradient;
+    }
+  }
+  &.btn-primary {
+    background: $primary_color;
+    &:after {
+      content: "";
+      background: #fff;
+      -webkit-transition: all .8s;
+      -ms-transition: all .8s;
+      transition: all .8s;
+      position: absolute;
+      height: 120%;
+      width: 15px;
+      opacity: .2;
+      left: -35%;
+      top: -10%;
+      transform: rotate(15deg);
+      -moz-transform: rotate(15deg);
+      -webkit-transform: rotate(15deg);
+      -o-transform: rotate(15deg);
+    }
+    &:hover, &:focus {
+      background: $primary_color;
+      &:after {
+        left: 130%;
+      }
+    }
+  }
+  &.btn-dark1 {
+    font-size: 15px;
+    line-height: 36px;
+    border-radius: 5px;
+    padding: 0 16px;
+    font-family: 'Poppins', sans-serif;
+    background: #08203a;
+    .ct-icon-plus {
+      width: 10px;
+      height: 10px;
+      &:before {
+        top: 4px;
+      }
+      &:after {
+        left: 4px;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      margin: auto;
+      @include background-horizontal-right($gradient_color_from, $gradient_color_to);
+      transform-origin: right center;
+      -webkit-transform-origin: right center;
+      @include transform(scale(0, 1));
+      @include transition(transform 0.3s cubic-bezier(0.37, 0.31, 0.2, 0.85));
+      z-index: -1;
+    }
+    &:hover {
+      background: #08203a;
+      &:before {
+        transform-origin: left center;
+        -webkit-transform-origin: left center;
+        @include transform(scale(1, 1));
+      }
+    }
+  }
+  .ct-icon-rotate {
+    @include transform(rotate(-45deg));
+    @include transition(.3s cubic-bezier(.24,.74,.58,1));
+  }
+  &:hover .ct-icon-rotate {
+    @include transform(rotate(0deg));
+  }
+  &.btn-circle-text {
+    background: none !important;
+    color: #2e2d2d;
+    font-size: 16px;
+    padding: 0 14px;
+    line-height: 51px;
+    &:before {
+      content: '';
+      width: 49px;
+      height: 49px;
+      left: 0;
+      background-color: #{'rgba(var(--primary-color-rgb),0.14)'};
+      @include border-radius(49px);
+      @include transform(translate(0, -50%));
+      top: 50%;
+      position: absolute;
+      z-index: -1;
+      @include transition(.3s cubic-bezier(.24,.74,.58,1));
+    }
+    &:hover {
+      padding: 0 28px;
+      color: #fff;
+      &:before {
+        width: 100%;
+        background-color: $primary_color;
+      }
+    }
+  }
+  &.btn-underline-text {
+    background: none !important;
+    color: #0e0d0f;
+    font-size: 15px;
+    padding: 0;
+    line-height: 51px;
+    &:focus {
+      outline: none;
+    }
+    .ct-button-text {
+      position: relative;
+      &:before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: #0e0d0f;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: 9px;
+        @include transition(.3s cubic-bezier(.24,.74,.58,1));
+      }
+    }
+    &:hover {
+      color: $primary_color;
+      .ct-button-text:before {
+        background-color: $primary_color;
+      }
+    }
+  }
+  &.btn-gradient-bottom {
+    background-size: auto;
+    @include background-gradient-top($gradient_color_from, $gradient_color_to);
+    @include border-radius(51px);
+    &:after {
+        content: "";
+        background: #fff;
+        position: absolute;
+        height: 120%;
+        width: 15px;
+        opacity: 0.2;
+        left: -45%;
+        top: -10%;
+        @include transition(all 0.8s);
+        @include transform(rotate(15deg));
+    }
+    &:hover {
+        @include transform(translateY(-4px));
+        &:after {
+            left: 130%;
+        }
+    }
+  }
+  &.btn-gradient-rotate {
+    background-size: auto;
+    @include background-gradient-rotate(135deg, $gradient_color_from, $gradient_color_to);
+    @include border-radius(3px);
+    @include box-shadow(none !important);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 55px;
+    font-family: 'Saira', sans-serif;
+    &:after {
+        content: "";
+        background: #fff;
+        position: absolute;
+        height: 120%;
+        width: 15px;
+        opacity: 0.2;
+        left: -45%;
+        top: -10%;
+        @include transition(all 0.8s);
+        @include transform(rotate(15deg));
+    }
+    &:hover {
+        &:after {
+          left: 130%;
+        }
+    }
+  }
+  &.btn-outline-gradient {
+    color: #0d1422;
+    font-size: 18px;
+    @include font-family-default($body_default_font);
+    padding: 0 45px;
+    line-height: 70px;
+    @include border-radius(70px);
+    background: none !important;
+    &:before {
+      content: "";
+      padding: 2px;
+      border-radius: 70px;
+      @include background-gradient-bottom($gradient_color_to, $gradient_color_from);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask-composite: add, add;
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+    }
+  }
+}
+
+.ct-button-wrapper {
+  i {
+    display: inline-flex;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    .ct-button-icon {
+      display: inline-flex;
+    }
+    &.icon-ps-right {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.btn-text-gr {
+  font-size: 15px;
+  @include font-family-heading($heading_default_font);
+  font-weight: 700;
+  @extend .text-gradient;
+  i {
+    margin-left: 6px;
+    font-size: 18px;
+    @include transition(.3s cubic-bezier(.24,.74,.58,1));
+  }
+  &:hover i {
+    margin-left: 10px;
+  }
+}
+
+.btn-block .ct-button-wrapper .btn, .btn-block.btn {
+  width: 100%;
+}
+
+.btn-nina, .btn-outline-gradient {
+  .pxl--btn-text {
+    position: relative;
+    direction: ltr;
+    display: block;
+    &:before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+        transition: transform 0.2s, opacity 0.2s;
+        transition-timing-function: ease, ease;
+        -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+        white-space: nowrap;
+    }
+    > span {
+        white-space: nowrap;
+        display: inline-block;
+        padding: 0;
+        opacity: 0;
+        -webkit-transform: translate3d(0, -14px, 0);
+        transform: translate3d(0, -14px, 0);
+        -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+        transition: transform 0.2s, opacity 0.2s;
+        transition-timing-function: ease, ease;
+        -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+        line-height: normal;
+    }
+  }
+  &:hover {
+    @include transform(translateY(0px));
+    .pxl--btn-text {
+        &:before {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+        span {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+  }
+  &:not(:hover) .pxl--btn-text > span {
+      transition-delay: 0s !important;
+  }
+}
+
+.ct-button-shortcode {
+  &.btn.btn-outline-gradient {
+    color: #fff;
+    @media #{$max-sm} {
+      line-height: 56px;
+    }
+    &:before {
+      @include background-gradient-bottom($primary_color, #fff);
+    }
+  }
+}

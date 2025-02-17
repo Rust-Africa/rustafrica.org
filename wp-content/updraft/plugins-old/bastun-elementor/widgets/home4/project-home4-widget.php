@@ -1,0 +1,478 @@
+<?php
+namespace BdevsElementor\Widget;
+
+use Elementor\Controls_Manager;
+use Elementor\Group_Control_Typography;
+use Elementor\Scheme_Typography;
+use Elementor\Group_Control_Border;
+use Elementor\Group_Control_Box_Shadow;
+
+/**
+ * Bdevs Elementor Widget.
+ *
+ * Elementor widget that inserts an embbedable content into the page, from any given URL.
+ *
+ * @since 1.0.0
+ */
+class BdevsProjectHome4 extends \Elementor\Widget_Base {
+
+	/**
+	 * Get widget name.
+	 *
+	 * Retrieve Bdevs Elementor widget name.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 *
+	 * @return string Widget name.
+	 */
+	public function get_name() {
+		return 'bdevs-project-home4';
+	}
+
+	/**
+	 * Get widget title.
+	 *
+	 * Retrieve Bdevs Elementor widget title.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 *
+	 * @return string Widget title.
+	 */
+	public function get_title() {
+		return __( 'Project Home 4', 'bdevs-elementor' );
+	}
+
+	/**
+	 * Get widget icon.
+	 *
+	 * Retrieve Bdevs Slider widget icon.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 *
+	 * @return string Widget icon.
+	 */
+	public function get_icon() {
+		return 'eicon-slideshow';
+	}
+
+	/**
+	 * Get widget categories.
+	 *
+	 * Retrieve the list of categories the Bdevs Slider widget belongs to.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 *
+	 * @return array Widget categories.
+	 */
+	public function get_categories() {
+		return [ 'home-4-elementor' ];
+	}
+
+	public function get_keywords() {
+		return [ 'Project', 'carousel' ];
+	}
+
+	public function get_script_depends() {
+		return [ 'bdevs-elementor'];
+	}
+	public function get_project_categories_options() {
+		$categories = get_terms('class', [
+			'hide_empty' => false,
+		]);
+		$options = [];
+		if (!empty($categories) && !is_wp_error($categories)) {
+			foreach ($categories as $category) {
+				$options[$category->slug] = $category->name;
+			}
+		}
+		return $options;
+	}
+
+	public function get_post_titles_options() {
+		$title_options = [];
+		$args = [
+			'post_type'      => 'project',
+			'posts_per_page' => -1,
+			'post_status'    => 'publish',
+		];
+		$posts = get_posts($args);
+		if ($posts) {
+			foreach ($posts as $post) {
+				$title_options[$post->ID] = $post->post_title;
+			}
+		}
+		return $title_options;
+	}
+	// BDT Position
+	protected function element_pack_position() {
+	    $position_options = [
+	        ''              => esc_html__('Default', 'bdevs-elementor'),
+	        'top-left'      => esc_html__('Top Left', 'bdevs-elementor') ,
+	        'top-center'    => esc_html__('Top Center', 'bdevs-elementor') ,
+	        'top-right'     => esc_html__('Top Right', 'bdevs-elementor') ,
+	        'center'        => esc_html__('Center', 'bdevs-elementor') ,
+	        'center-left'   => esc_html__('Center Left', 'bdevs-elementor') ,
+	        'center-right'  => esc_html__('Center Right', 'bdevs-elementor') ,
+	        'bottom-left'   => esc_html__('Bottom Left', 'bdevs-elementor') ,
+	        'bottom-center' => esc_html__('Bottom Center', 'bdevs-elementor') ,
+	        'bottom-right'  => esc_html__('Bottom Right', 'bdevs-elementor') ,
+	    ];
+
+	    return $position_options;
+	}
+
+	protected function _register_controls() {
+		$option = $this->get_project_categories_options();
+		$title_options = $this->get_post_titles_options();
+		$this->start_controls_section(
+			'section_content_Projecthome4',
+			[
+				'label' => esc_html__( 'Project Home 4', 'bdevs-elementor' ),
+			]
+		);
+		$this->add_control(
+			'subheading',
+			[
+				'label'       => __( 'Subheading', 'bdevs-elementor' ),
+				'type'        => Controls_Manager::TEXT,
+				'placeholder' => __( 'Enter your Subheading', 'bdevs-elementor' ),
+				'default'     => __( 'OUR PORTFOLIO', 'bdevs-elementor' ),
+				'label_block' => true,
+			]
+		);	
+		$this->add_control(
+			'heading',
+			[
+				'label'       => __( 'Heading', 'bdevs-elementor' ),
+				'type'        => Controls_Manager::TEXT,
+				'placeholder' => __( 'Enter your heading', 'bdevs-elementor' ),
+				'default'     => __( 'OUR COMPLETE PROJECT', 'bdevs-elementor' ),
+				'label_block' => true,
+			]
+		);	
+		$this->add_control(
+			'all',
+			[
+				'label'       => __( 'All', 'bdevs-elementor' ),
+				'type'        => Controls_Manager::TEXT,
+				'placeholder' => __( 'Enter your All', 'bdevs-elementor' ),
+				'default'     => __( ' All ', 'bdevs-elementor' ),
+				'label_block' => true,
+			]
+		);	
+		$repeatermenu = new \Elementor\Repeater();
+		$repeatermenu->add_control(
+			'sl_menu',
+			[
+				'label'     	=> esc_html__( 'Choose Menu Item', 'bdevs-elementor' ),
+				'type'      	=> Controls_Manager::SELECT,
+				'options'   	=> $option,
+				'default'   	=> array_key_first($option),
+				'label_block' 	=> true,
+			]
+		);
+		$this->add_control(
+			'list_menu',
+			[
+				'label' 		=> esc_html__( 'List Menu', 'bdevs-elementor' ),
+				'type' 			=> Controls_Manager::REPEATER,
+				'fields' 		=> $repeatermenu->get_controls(),
+				'default' 		=> [
+					[
+						
+					],
+				],
+				'title_field' 	=> '{{{ sl_menu }}}',
+			]
+		);
+		$repeater = new \Elementor\Repeater();
+		$repeater->add_control(
+			'title_post',
+			[
+				'label'     	=> esc_html__( 'Choose Post For Title', 'bdevs-elementor' ),
+				'type'      	=> Controls_Manager::SELECT,
+				'options'   	=> $title_options,
+				'default'   	=> array_key_first($title_options),
+				'label_block' 	=> true,
+			]
+		);
+		$repeater->add_control(
+			'img_thumb_item',
+			[
+				'label'       => esc_html__( 'Image Thumbnail Item', 'bdevs-elementor' ),
+				'type'        => Controls_Manager::MEDIA,
+				'dynamic'     => [ 'active' => true ],
+				'label_block' => true,
+				'description' => esc_html__( 'Upload image thumbnail item', 'bdevs-elementor' ),
+			]
+		);
+		$repeater->add_control(
+			'title_edit',
+			[
+				'label' 		=> esc_html__( 'Title Item', 'bdevs-elementor' ),
+				'type' 			=> Controls_Manager::TEXTAREA,
+				'default' 		=> esc_html__( '' , 'bdevs-elementor' ),
+				'show_label' 	=> true,
+			]
+		);
+		$repeater->add_control(
+			'subtitle_edit',
+			[
+				'label' 		=> esc_html__( 'Subtitle Item', 'bdevs-elementor' ),
+				'type' 			=> Controls_Manager::TEXTAREA,
+				'default' 		=> esc_html__( '' , 'bdevs-elementor' ),
+				'show_label' 	=> true,
+			]
+		);
+		
+		$this->add_control(
+			'tabs',
+			[
+				'label' 		=> esc_html__( 'List Feature Item', 'bdevs-elementor' ),
+				'type' 			=> Controls_Manager::REPEATER,
+				'fields' 		=> $repeater->get_controls(),
+				'default' 		=> [
+					[
+						
+					],
+				],
+			]
+		);
+		$this->add_control(
+			'button',
+			[
+				'label'       => __( 'Button', 'bdevs-elementor' ),
+				'type'        => Controls_Manager::TEXT,
+				'placeholder' => __( 'Enter your Button', 'bdevs-elementor' ),
+				'default'     => __( 'TAke This Course', 'bdevs-elementor' ),
+				'label_block' => true,
+			]
+		);	
+		$this->add_control(
+			'link_button',
+			[
+				'label'       => __( 'Link Button', 'bdevs-elementor' ),
+				'type'        => Controls_Manager::TEXT,
+				'placeholder' => __( 'Enter your Link Button', 'bdevs-elementor' ),
+				'default'     => __( '#', 'bdevs-elementor' ),
+				'label_block' => true,
+			]
+		);
+		
+		$this->end_controls_section();
+		$this->start_controls_section(
+			'section_content_layout',
+			[
+				'label' => esc_html__( 'Layout', 'bdevs-elementor' ),
+			]
+		);
+
+		$this->add_responsive_control(
+			'align',
+			[
+				'label'   => esc_html__( 'Alignment', 'bdevs-elementor' ),
+				'type'    => Controls_Manager::CHOOSE,
+				'options' => [
+					'left' => [
+						'title' => esc_html__( 'Left', 'bdevs-elementor' ),
+						'icon'  => 'fa fa-align-left',
+					],
+					'center' => [
+						'title' => esc_html__( 'Center', 'bdevs-elementor' ),
+						'icon'  => 'fa fa-align-center',
+					],
+					'right' => [
+						'title' => esc_html__( 'Right', 'bdevs-elementor' ),
+						'icon'  => 'fa fa-align-right',
+					],
+					'justify' => [
+						'title' => esc_html__( 'Justified', 'bdevs-elementor' ),
+						'icon'  => 'fa fa-align-justify',
+					],
+				],
+				'prefix_class' => 'elementor%s-align-',
+				'description'  => 'Use align to match position',
+				'default'      => 'left',
+			]
+		);
+		
+
+		$this->end_controls_section();
+
+	}
+
+	public function render() {
+
+		$settings  = $this->get_settings_for_display();
+		extract($settings);
+		?>  
+<div class="portfolio sp_top_120 sp_bottom_120 white__bg special__spacing" id="tb__portfolio">
+    <div class="container">
+        <div class="row align-items-center sp_bottom_70">
+            <div class="col-xxl-6 col-xl-5 col-lg-4 col-md-12 col-sm-12 col-12" data-aos="fade-up" data-aos-duration="1500">
+                <div class="section__title section__title--2">
+                	<?php if ( '' !== $settings['subheading'] )  : ?>
+                    <div class="section__title__small">
+                        <span><?php print wp_kses_post($settings['subheading']); ?></span>
+                    </div>
+                    <?php endif; ?>
+                    <?php if ( '' !== $settings['heading'] )  : ?>
+                    <div class="section__title__heading">
+                        <h3><?php print wp_kses_post($settings['heading']); ?></h3>
+                    </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-12 col-sm-12 col-12" data-aos="fade-up" data-aos-duration="1800">
+                <div class="gridFilter portfolio__filter text-end gridFilter" id="myBtnContainer">
+                	<button class="btn active common__gradient__bg" onclick="filterSelection('all')"><span><?php echo wp_kses_post($settings['all']); ?></span></button>
+                	<?php
+					foreach ( $settings['list_menu'] as $item ) :
+						$cat_slug = $item['sl_menu'];
+						$term = get_term_by('slug', $cat_slug, 'class');
+						if ($term && !is_wp_error($term)) {
+							$cat_name = $term->name;
+						} else {
+							$cat_name = '';
+						}
+					?>
+                    <button class="btn common__gradient__bg" onclick="filterSelection('<?php echo esc_attr($cat_slug);?>')"><span><?php echo esc_attr($cat_name);?></span></button>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        	<?php
+				$i = 0;
+				foreach ( $settings['tabs'] as $item ) :
+					$i++;
+			?>
+				<?php 
+				$post_id = $item['title_post'];
+				$wp_query = new \WP_Query(array(
+					'post_type' => 'project',
+					'p'	=> $post_id,
+					'post_status' => 'publish',
+				));
+				while ($wp_query -> have_posts()) : $wp_query -> the_post();
+					$cates = get_the_terms(get_the_ID(), 'class');
+					$cate_name = '';
+					$cate_slug = '';
+					foreach((array)$cates as $cate){
+						if(count($cates)>0){
+							$cate_name .= $cate->name.'  ';
+							$cate_slug .= $cate->slug .' ';
+						}
+					}
+				?>
+            <?php if($i%6 == 1){?>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 single__transform filterDiv <?php echo esc_attr($cate_slug);?>" data-aos="fade-up" data-aos-duration="1500">
+            <?php } elseif($i%6 == 2) { ?>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 single__transform filterDiv <?php echo esc_attr($cate_slug);?>" data-aos="fade-up" data-aos-duration="1700">
+            <?php } elseif($i%6 == 3) { ?>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 single__transform filterDiv <?php echo esc_attr($cate_slug);?>" data-aos="fade-up" data-aos-duration="1900">
+            <?php } elseif($i%6 == 4) { ?>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 single__transform filterDiv <?php echo esc_attr($cate_slug);?>" data-aos="fade-up" data-aos-duration="2100">
+            <?php } elseif($i%6 == 5) { ?>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 single__transform filterDiv <?php echo esc_attr($cate_slug);?>" data-aos="fade-up" data-aos-duration="2300">
+            <?php } else { ?>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 single__transform filterDiv <?php echo esc_attr($cate_slug);?>" data-aos="fade-up" data-aos-duration="2500">
+            <?php } ?>
+                <div class="portfolio__single">
+                    <div class="portfolio__img">
+                    	<?php if ('' != $item['img_thumb_item']['url']) { ?>
+                        <img class="img-fluid" src="<?php echo wp_kses_post($item['img_thumb_item']['url']); ?>" alt="">
+                        <?php } else { ?>
+                        <img class="img-fluid" src="<?php the_post_thumbnail_url(); ?>" alt="">
+                        <?php } ?>
+                        <div class="portfolio__content">
+                        	<?php if ('' != $item['title_edit']) { ?>
+                            <h6><a href="<?php the_permalink(); ?>"><?php echo wp_kses_post($item['title_edit']); ?></a></h6>
+                            <?php } else { ?>
+                            <h6><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
+                            <?php } ?>
+                            <?php if ('' != $item['subtitle_edit']) { ?>
+                            <span><?php echo wp_kses_post($item['subtitle_edit']); ?></span>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php endwhile; ?>
+			<?php endforeach; ?>
+			<?php if ('' != $settings['button']): ?>
+            <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1500">
+                <div class="portfolio__botton text-center">
+                    <a class="default__button" href="<?php echo wp_kses_post($settings['link_button']); ?>"><?php echo wp_kses_post($settings['button']); ?></a>
+                </div>
+            </div>
+            <?php endif ?>
+        </div>
+    </div>
+</div>
+<div class="border__line"></div>
+
+<script type="text/javascript">
+		filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    // Remove active class from all buttons
+    for (var j = 0; j < btns.length; j++) {
+      btns[j].classList.remove("active");
+    }
+    // Add active class to the clicked button
+    this.classList.add("active");
+  });
+}
+
+</script>
+
+	<?php
+	}
+
+}

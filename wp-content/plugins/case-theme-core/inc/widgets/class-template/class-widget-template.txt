@@ -1,0 +1,9 @@
+class [[class_name]] extends Case_Theme_Core_Widget_Base{
+    protected $name = '[[name]]';
+    protected $title = '[[title]]';
+    protected $icon = '[[icon]]';
+    protected $categories = array( [[categories]] );
+    protected $params = '[[params]]';
+    protected $styles = array( [[styles]] );
+    protected $scripts = array( [[scripts]] );
+}

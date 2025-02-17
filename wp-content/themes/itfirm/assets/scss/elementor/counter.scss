@@ -1,0 +1,260 @@
+.ct-counter-line1 {
+	&:before {
+		content: '';
+		width: 3px;
+		height: 80px;
+		background-color: #e7e7e7;
+		position: absolute;
+		top: 50%;
+		right: -1px;
+		@include transform(translate(0, -50%));
+		@media #{$max-lg} {
+			display: none;
+		}
+	}
+}
+.ct-counter-layout1 {
+	.ct-counter-icon {
+		margin-right: 10px;
+		line-height: 1;
+		i {
+			color: $primary_color;
+			font-size: 34px;
+			&.flaticon-team {
+				font-size: 38px;
+			}
+		}
+	}
+	.ct-counter-number {
+		line-height: 1;
+		font-size: 40px;
+		color: #000;
+		font-weight: 700;
+		@include font-family-heading($heading_default_font);
+		display: inline-flex;
+		@media #{$max-lg} {
+			font-size: 32px;
+		}
+	}
+	.ct-counter-title {
+		font-size: 18px;
+		@media #{$max-lg} {
+			font-size: 16px;
+		}
+	}
+	.ct-counter-meta {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		margin-bottom: 4px;
+	}
+	&.style2 {
+		.ct-counter-icon {
+			margin-right: 0;
+			margin-bottom: 22px;
+		}
+		.ct-counter-meta {
+			display: block;
+		}
+		.ct-counter-inner {
+			text-align: center;
+		}
+	}
+	&.style3 {
+		.ct-counter-icon {
+			width: 88px;
+			min-width: 88px;
+			height: 82px;
+			background-color: #fff;
+			@include border-radius(25px);
+			text-align: center;
+			@include box-shadow(0 19px 18px rgba(#000f28, 0.23));
+			margin-right: 24px;
+			position: relative;
+			@media #{$max-lg} {
+				width: 76px;
+				min-width: 76px;
+				height: 76px;
+				margin-right: 16px;
+			}
+			i {
+				font-size: 48px;
+				@media #{$max-lg} {
+					font-size: 42px;
+				}
+			}
+			* {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				@include transform(translate(-50%, -50%));
+			}
+		}
+		.ct-counter-number {
+			font-size: 48px;
+			@media #{$max-lg} {
+				font-size: 42px;
+			}
+		}
+		.ct-counter-title {
+			font-size: 17px;
+			line-height: 1.6;
+			margin-top: 18px;
+			margin-bottom: 0;
+			@media #{$max-lg} {
+				font-size: 15px;
+			}
+		}
+	}
+	&.style4 {
+		text-align: center;
+		.ct-counter-icon {
+			margin: 0 0 18px;
+			i {
+				font-size: 72px;
+				@extend .text-gradient;
+				@include background-gradient-top($gradient_color_from, $gradient_color_to);
+			}
+		}
+		.ct-counter-meta {
+			display: block;
+		}
+		.ct-counter-number {
+			font-size: 48px;
+		}
+		.ct-counter-title {
+			color: #0d1422;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+	}
+}
+.ct-section-counter1:before {
+	content: '';
+	height: 17px;
+	background-color: #cacfd6;
+	position: absolute;
+	bottom: -17px;
+	left: 32px;
+	right: 32px;
+}
+
+.ct-counter-layout2 {
+	&.style1 {
+		.ct-counter-icon {
+			width: 92px;
+			min-width: 92px;
+			height: 92px;
+			position: relative;
+			z-index: 1;
+			text-align: center;
+			margin-right: 14px;
+			i {
+				font-size: 44px;
+				@extend .text-gradient;
+				&.flaticon-result {
+					font-size: 38px;
+				}
+			}
+			i, img, svg {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				@include transform(translate(-50%, -50%));
+			}
+		}
+		.ct-counter-hexagon {
+			background: transparent;
+			overflow: hidden;
+			margin: 0 auto;
+			width: 83.232px;
+			height: 96.12px;
+			@include transform(rotate(0deg) skewY(30deg) scale(0.95));
+			z-index: -2;
+			position: absolute;
+			top: 0;
+			left: 4px;
+			&:before {
+				@include transform(skewY(-30deg) rotate(60deg) translate(0));
+				display: block;
+				width: inherit;
+				height: inherit;
+				@include background-horizontal-right($gradient_color_from, $gradient_color_to);
+				background-size: auto;
+				background-size: cover;
+				content: '';
+			}
+			&.hexagon-main {
+				z-index: -1;
+				@include transform(rotate(0deg) skewY(30deg) scale(0.9));
+				&:before {
+					background: #ebeaff;
+				}
+			}
+			&.hexagon-bg {
+			 	z-index: -3;
+			 	@include transform(rotate(90deg) skewY(30deg) scale(1.02));
+			 	&:before {
+					background: #ebeaff;
+				}
+			}
+		}
+		.ct-counter-title {
+			font-size: 18px;
+			color: #444;
+			line-height: normal;
+		}
+		.ct-counter-number {
+			display: flex;
+			white-space: nowrap;
+			line-height: 1;
+			font-size: 48px;
+			font-weight: 700;
+			color: #08203a;
+			margin-bottom: 10px;
+		}
+		.ct-counter-inner {
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+		}
+	}
+	&.style2 {
+		.ct-counter-hexagon {
+			display: none;
+		}
+		.ct-counter-icon {
+			line-height: 1;
+			margin-right: 24px;
+			i {
+				font-size: 70px;
+				color: $primary_color;
+			}
+			img {
+				max-height: 70px;
+			}
+			svg {
+				height: 70px;
+				fill: $primary_color;
+			}
+		}
+		.ct-counter-number {
+			font-size: 36px;
+			font-weight: 700;
+			line-height: 1;
+			color: #000;
+			display: inline-flex;
+			margin-bottom: 14px;
+		}
+		.ct-counter-title {
+			font-size: 18px;
+			font-weight: 600;
+			color: #555;
+		}
+		.ct-counter-inner {
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+		}
+	}
+}

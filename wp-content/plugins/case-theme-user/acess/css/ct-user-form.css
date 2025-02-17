@@ -1,0 +1,23 @@
+@CHARSET "ISO-8859-1";
+
+.ct-user-form-dropdown {
+	position: relative;
+}
+
+.up-dropdown-content {
+	display: none;
+}
+
+.ct-user-form-dropdown.active .up-dropdown-content {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: #ddd;
+	display: block;
+	z-index: 9999;
+}
+
+
+
+
+

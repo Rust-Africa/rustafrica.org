@@ -1,0 +1,244 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Smart Quick View\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:"
+"1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-22 01:37+0000\n"
+"PO-Revision-Date: 2017-12-22 01:54+0000\n"
+"Last-Translator: WooClever <admin@local.woo>\n"
+"Language-Team: Vietnamese\n"
+"Language: vi\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: woo-smart-quick-view-premium/index.php:166,
+#: woo-smart-quick-view-premium/index.php:456
+msgid "View Product Details"
+msgstr "Xem chi tiết sản phẩm"
+
+#: woo-smart-quick-view-premium/index.php:184,
+#: woo-smart-quick-view-premium/index.php:186,
+#: woo-smart-quick-view-premium/index.php:206,
+#: woo-smart-quick-view-premium/index.php:209,
+#: woo-smart-quick-view-premium/index.php:211,
+#: woo-smart-quick-view-premium/index.php:268
+msgid "Quick view"
+msgstr "Xem nhanh"
+
+#: woo-smart-quick-view-premium/index.php:218,
+#: woo-smart-quick-view-premium/index.php:218
+msgid "Woo Quick View"
+msgstr "Woo Quick View"
+
+#: woo-smart-quick-view-premium/index.php:229
+msgid "Woo Smart Quick View"
+msgstr "Woo Smart Quick View"
+
+#: woo-smart-quick-view-premium/index.php:232
+msgid ""
+"WooCommerce Smart Quick View allows users to get a quick look of products "
+"without opening the product page."
+msgstr ""
+"Woo Smart Quick View cho phép khách hàng xem trước sản phẩm và mua hàng "
+"nhanh mà không cần mở trang chi tiết sản phẩm."
+
+#: woo-smart-quick-view-premium/index.php:238,
+#: woo-smart-quick-view-premium/index.php:531
+msgid "Settings"
+msgstr "Tùy chọn"
+
+#: woo-smart-quick-view-premium/index.php:240,
+#: woo-smart-quick-view-premium/index.php:532
+msgid "Support"
+msgstr "Hỗ trợ"
+
+#: woo-smart-quick-view-premium/index.php:247
+msgid "General"
+msgstr "Thiết lập chung"
+
+#: woo-smart-quick-view-premium/index.php:250
+msgid "Type"
+msgstr "Kiểu"
+
+#: woo-smart-quick-view-premium/index.php:255
+msgid "Button"
+msgstr "Nút"
+
+#: woo-smart-quick-view-premium/index.php:259
+msgid "Link"
+msgstr "Liên kết"
+
+#: woo-smart-quick-view-premium/index.php:265
+msgid "Text"
+msgstr "Chữ"
+
+#: woo-smart-quick-view-premium/index.php:269
+msgid "button text"
+msgstr "chữ trên nút"
+
+#: woo-smart-quick-view-premium/index.php:273
+msgid "Extra class (optional)"
+msgstr "Class mở rộng (không bắt buộc)"
+
+#: woo-smart-quick-view-premium/index.php:278
+msgid "Add extra class for action button/link, split by one space."
+msgstr "Thêm class mở rộng cho nút/liên kết, cách nhau bởi dấu phẩy."
+
+#: woo-smart-quick-view-premium/index.php:283
+msgid "Button position"
+msgstr "Vị trí"
+
+#: woo-smart-quick-view-premium/index.php:288
+msgid "After title"
+msgstr "Sau tiêu đề"
+
+#: woo-smart-quick-view-premium/index.php:292
+msgid "After rating"
+msgstr "Sau đánh giá"
+
+#: woo-smart-quick-view-premium/index.php:296
+msgid "After price"
+msgstr "Sau giá"
+
+#: woo-smart-quick-view-premium/index.php:300
+msgid "Before add to cart"
+msgstr "Trước nút thêm vào giỏ"
+
+#: woo-smart-quick-view-premium/index.php:304
+msgid "After add to cart"
+msgstr "Sau nút thêm vào giỏ"
+
+#: woo-smart-quick-view-premium/index.php:308
+msgid "None"
+msgstr "Không"
+
+#: woo-smart-quick-view-premium/index.php:314
+msgid "Button shortcode"
+msgstr "Mã ngắn"
+
+#: woo-smart-quick-view-premium/index.php:317
+msgid ""
+"You can add the button by manually, please use the shortcode %s, eg. %s for "
+"the product with ID is 99."
+msgstr ""
+"Bạn có thể đặt nút xem nhanh bằng cách sử dụng mã ngắn %s, ví dụ: %s cho sản "
+"phẩm có ID là 99."
+
+#: woo-smart-quick-view-premium/index.php:322
+msgid "Popup effect"
+msgstr "Hiệu ứng"
+
+#: woo-smart-quick-view-premium/index.php:327
+msgid "Fade"
+msgstr "Mờ"
+
+#: woo-smart-quick-view-premium/index.php:331
+msgid "Zoom in"
+msgstr "Phóng to vào"
+
+#: woo-smart-quick-view-premium/index.php:335
+msgid "Zoom out"
+msgstr "Phóng to ra"
+
+#: woo-smart-quick-view-premium/index.php:339
+msgid "Newspaper"
+msgstr "Báo chí"
+
+#: woo-smart-quick-view-premium/index.php:343
+msgid "Move horizontal"
+msgstr "Di chuyển ngang"
+
+#: woo-smart-quick-view-premium/index.php:347
+msgid "Move from top"
+msgstr "Di chuyển dọc"
+
+#: woo-smart-quick-view-premium/index.php:351
+msgid "3d unfold"
+msgstr "Lật"
+
+#: woo-smart-quick-view-premium/index.php:355
+msgid "Slide bottom"
+msgstr "Từ dưới lên"
+
+#: woo-smart-quick-view-premium/index.php:361
+msgid "Content"
+msgstr "Nội dung"
+
+#: woo-smart-quick-view-premium/index.php:364
+msgid "Images"
+msgstr "Ảnh"
+
+#: woo-smart-quick-view-premium/index.php:369
+msgid "Product image & Product gallery images"
+msgstr "Ảnh sản phẩm và Ảnh thư viện"
+
+#: woo-smart-quick-view-premium/index.php:373
+msgid "Product image"
+msgstr "Ảnh sản phẩm"
+
+#: woo-smart-quick-view-premium/index.php:377
+msgid "Product gallery images"
+msgstr "Ảnh thư viện"
+
+#: woo-smart-quick-view-premium/index.php:383
+msgid "Lightbox for images"
+msgstr "Lightbox cho ảnh"
+
+#: woo-smart-quick-view-premium/index.php:388,
+#: woo-smart-quick-view-premium/index.php:443
+msgid "No"
+msgstr "Không"
+
+#: woo-smart-quick-view-premium/index.php:392,
+#: woo-smart-quick-view-premium/index.php:447
+msgid "Yes"
+msgstr "Có"
+
+#: woo-smart-quick-view-premium/index.php:398
+msgid "Product summary"
+msgstr "Thông tin sản phẩm"
+
+#: woo-smart-quick-view-premium/index.php:407
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: woo-smart-quick-view-premium/index.php:412
+msgid "Rating"
+msgstr "Đánh giá"
+
+#: woo-smart-quick-view-premium/index.php:417
+msgid "Price"
+msgstr "Giá"
+
+#: woo-smart-quick-view-premium/index.php:422
+msgid "Excerpt"
+msgstr "Mô tả ngắn"
+
+#: woo-smart-quick-view-premium/index.php:427
+msgid "Add to cart"
+msgstr "Thêm vào giỏ"
+
+#: woo-smart-quick-view-premium/index.php:432
+msgid "Meta"
+msgstr "Thông tin thêm"
+
+#: woo-smart-quick-view-premium/index.php:438
+msgid "View details button"
+msgstr "Nút xem chi tiết"
+
+#: woo-smart-quick-view-premium/index.php:453
+msgid "View details text"
+msgstr "Chữ trên nút xem chi tiết"
+
+#: woo-smart-quick-view-premium/index.php:464
+msgid "Update Options"
+msgstr "Cập nhật"

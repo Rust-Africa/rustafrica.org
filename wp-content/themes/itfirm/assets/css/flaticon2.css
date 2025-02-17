@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Flaticon2";
+  src: url("../fonts/flaticon2.eot");
+  src: url("../fonts/flaticon2.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/flaticon2.woff2") format("woff2"),
+       url("../fonts/flaticon2.woff") format("woff"),
+       url("../fonts/flaticon2.ttf") format("truetype"),
+       url("../fonts/flaticon2.svg#flaticon2") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon2";
+    src: url("../fonts/flaticon2.svg#Flaticon2") format("svg");
+  }
+}
+
+[class^="flaticon2-"]:before, [class*=" flaticon2-"]:before,
+[class^="flaticon2-"]:after, [class*=" flaticon2-"]:after {   
+  font-family: Flaticon2;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+.flaticon2-map-location:before {
+    content: "\f101";
+}
+.flaticon2-mail:before {
+    content: "\f102";
+}
+.flaticon2-phone:before {
+    content: "\f103";
+}
+.flaticon2-vector-idea:before {
+    content: "\f104";
+}
+.flaticon2-management:before {
+    content: "\f105";
+}
+.flaticon2-folder:before {
+    content: "\f106";
+}
+.flaticon2-smart-city:before {
+    content: "\f107";
+}
+.flaticon2-pencil-and-ruler:before {
+    content: "\f108";
+}
+.flaticon2-stats:before {
+    content: "\f109";
+}
+.flaticon2-portfolio:before {
+    content: "\f10a";
+}
+.flaticon2-cv:before {
+    content: "\f10b";
+}
+.flaticon2-team:before {
+    content: "\f10c";
+}
+.flaticon2-virtual-tour:before {
+    content: "\f10d";
+}
+.flaticon2-sprint:before {
+    content: "\f10e";
+}
+.flaticon2-process:before {
+    content: "\f10f";
+}
+.flaticon2-process-1:before {
+    content: "\f110";
+}
+.flaticon2-quotes:before {
+    content: "\f111";
+}
+.flaticon2-file-outline-with-text-lines:before {
+    content: "\f112";
+}
+.flaticon2-calendar:before {
+    content: "\f113";
+}
+.flaticon2-customer-service:before {
+    content: "\f114";
+}
+.flaticon2-payroll:before {
+    content: "\f115";
+}
+.flaticon2-skyline:before {
+    content: "\f116";
+}
+.flaticon2-network:before {
+    content: "\f117";
+}
+.flaticon2-trophy:before {
+    content: "\f118";
+}
+.flaticon2-cooperation:before {
+    content: "\f119";
+}
+.flaticon2-shopping-cart:before {
+    content: "\f11a";
+}
+.flaticon2-star:before {
+    content: "\f11b";
+}
+.flaticon2-star-1:before {
+    content: "\f11c";
+}
+.flaticon2-play-button:before {
+    content: "\f11d";
+}

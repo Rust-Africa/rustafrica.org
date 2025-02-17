@@ -1,0 +1,198 @@
+.brand{
+    background: var(--gradientColor );
+   
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media #{$device-md} {
+            flex-wrap: wrap;
+        }
+        @media #{$device-sm} {
+            flex-wrap: wrap;
+        }
+    }
+    &__single{
+        @media #{$device-md} {
+           margin-bottom: 30px;
+        } 
+        @media #{$device-sm} {
+            margin-bottom: 30px;
+         }
+    }
+    &__roated{
+        transform: skewY(1deg);
+        position: relative;
+        top: -20px;
+    }
+    &__single__counter{
+        .counter__number{
+            color: var(--whiteColor);
+            font-size: 15px;
+            margin-bottom: 5px;
+            span{
+                font-size: 32px;
+                font-weight: 700;
+                color: var(--whiteColor);
+            }
+        }
+        p{
+            margin: 0;
+            color: var(--whiteColor);
+        }
+    }
+    &--2{
+        background: var(--blackColor);
+    }
+    &__inner--2{
+        background: var(--gradientColor);
+        padding: 40px 60px;
+        border-radius: 10px;
+        @media #{$device-lg} {
+            padding: 20px 30px;
+         }
+        @media #{$device-md} {
+            padding: 20px 40px;
+         }
+         @media #{$device-sm} {
+            padding: 25px 30px;
+         }
+    }
+}
+
+
+.brand__margin__bottom {
+    top: -150px;
+    position: relative;
+    z-index: 111;
+}
+
+.brand__3{
+    position: absolute;
+    width: 100%;
+    top: -60px;
+    @media #{$device-lg} {
+        top: -40px;
+    }
+}
+
+
+
+
+
+.facts{
+    background: var(--gradientColor );
+   
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media #{$device-sm} {
+           flex-wrap: wrap;
+         }
+    }
+    &__inner--3{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media #{$device-lg},#{$device-md},#{$device-sm} {
+            flex-wrap: wrap;
+
+          }
+          .facts__single--3 {
+            @media #{$device-lg} {
+                width: 33%;
+                margin: 10px 0;
+            }
+            @media #{$device-md} {
+                margin-right: 10px;
+            }
+            @media #{$device-sm} {
+                margin-right: 0;
+                width: 50%;
+            }
+        }
+    }
+    &__roated{
+        transform: rotate(1deg);
+    }
+    &__single__counter{
+        .counter__number{
+            color: var(--whiteColor);
+            font-size: 15px;
+            margin-bottom: 5px;
+            line-height: 1;
+            span{
+                font-size: 32px;
+                font-weight: 700;
+                color: var(--whiteColor);
+            }
+        }
+        p{
+            margin: 0;
+            color: var(--whiteColor);
+        }
+    }
+    &__single{
+        @media #{$device-sm} {
+            margin: 10px 0;
+        }
+        img{
+            @media #{$device-md},#{$device-sm} {
+                display: none;
+            }
+        }
+    }
+    &__single--3{
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+        &:last-child{
+            margin-right: 0;
+        }
+        .facts__img{
+            margin-right: 20px;
+        }
+    }
+    &__icon{
+        margin-left: 50px;
+    }
+}
+
+
+
+.brand__animate {
+	white-space: nowrap;
+	position: relative;
+	will-change: transform;
+	animation: marquee 50s linear 0s infinite normal;
+	animation-play-state: running;
+    &:hover{
+        animation-play-state:paused
+    }
+    .brand__single{
+        min-width: 10%;
+        text-align: center;
+        @media #{$device-lg} {
+            min-width: 15%;
+        }
+        @media #{$device-md} {
+            min-width: 20%;
+            margin: 0;
+        }
+        @media #{$device-sm} {
+            min-width: 25%;
+            margin: 0;
+        }
+        @media #{$device-sm-small} {
+            min-width: 40%;
+        }
+    }
+    @media #{$device-md} {
+        flex-wrap: nowrap;
+    }
+    @media #{$device-sm} {
+        flex-wrap: nowrap;
+    }
+
+}

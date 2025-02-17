@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'woosq';
+    src: url('../fonts/woosq.eot?bhfj08');
+    src: url('../fonts/woosq.eot?bhfj08#iefix') format('embedded-opentype'),
+    url('../fonts/woosq.ttf?bhfj08') format('truetype'),
+    url('../fonts/woosq.woff?bhfj08') format('woff'),
+    url('../fonts/woosq.svg?bhfj08#woosq') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="woosq-icon-"], [class*=" woosq-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'woosq' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.woosq-icon-57:before {
+    content: "\e900";
+}
+
+.woosq-icon-58:before {
+    content: "\e901";
+}
+
+.woosq-icon-59:before {
+    content: "\e902";
+}
+
+.woosq-icon-60:before {
+    content: "\e903";
+}
+
+.woosq-icon-61:before {
+    content: "\e904";
+}
+
+.woosq-icon-62:before {
+    content: "\e905";
+}
+
+.woosq-icon-10:before {
+    content: "\e906";
+}
+
+.woosq-icon-11:before {
+    content: "\e907";
+}
+
+.woosq-icon-12:before {
+    content: "\e908";
+}
+
+.woosq-icon-13:before {
+    content: "\e909";
+}
+
+.woosq-icon-14:before {
+    content: "\e90a";
+}
+
+.woosq-icon-15:before {
+    content: "\e90b";
+}
+
+.woosq-icon-8:before {
+    content: "\e90c";
+}
+
+.woosq-icon-16:before {
+    content: "\e90d";
+}
+
+.woosq-icon-17:before {
+    content: "\e90e";
+}
+
+.woosq-icon-9:before {
+    content: "\e90f";
+}
+
+.woosq-icon-18:before {
+    content: "\e910";
+}
+
+.woosq-icon-19:before {
+    content: "\e911";
+}
+
+.woosq-icon-20:before {
+    content: "\e912";
+}
+
+.woosq-icon-21:before {
+    content: "\e913";
+}
+
+.woosq-icon-22:before {
+    content: "\e914";
+}
+
+.woosq-icon-5:before {
+    content: "\e915";
+}
+
+.woosq-icon-23:before {
+    content: "\e916";
+}
+
+.woosq-icon-24:before {
+    content: "\e917";
+}
+
+.woosq-icon-25:before {
+    content: "\e918";
+}
+
+.woosq-icon-26:before {
+    content: "\e919";
+}
+
+.woosq-icon-27:before {
+    content: "\e91a";
+}
+
+.woosq-icon-28:before {
+    content: "\e91b";
+}
+
+.woosq-icon-29:before {
+    content: "\e91c";
+}
+
+.woosq-icon-30:before {
+    content: "\e91d";
+}
+
+.woosq-icon-38:before {
+    content: "\e91e";
+}
+
+.woosq-icon-39:before {
+    content: "\e91f";
+}
+
+.woosq-icon-40:before {
+    content: "\e920";
+}
+
+.woosq-icon-31:before {
+    content: "\e921";
+}
+
+.woosq-icon-6:before {
+    content: "\e922";
+}
+
+.woosq-icon-1:before {
+    content: "\e923";
+}
+
+.woosq-icon-7:before {
+    content: "\e924";
+}
+
+.woosq-icon-63:before {
+    content: "\e925";
+}
+
+.woosq-icon-3:before {
+    content: "\e926";
+}
+
+.woosq-icon-4:before {
+    content: "\e927";
+}
+
+.woosq-icon-32:before {
+    content: "\e928";
+}
+
+.woosq-icon-33:before {
+    content: "\e929";
+}
+
+.woosq-icon-34:before {
+    content: "\e92a";
+}
+
+.woosq-icon-35:before {
+    content: "\e92b";
+}
+
+.woosq-icon-36:before {
+    content: "\e92c";
+}
+
+.woosq-icon-2:before {
+    content: "\e92d";
+}
+
+.woosq-icon-64:before {
+    content: "\e92e";
+}
+
+.woosq-icon-37:before {
+    content: "\e92f";
+}
+
+.woosq-icon-41:before {
+    content: "\f002";
+}
+
+.woosq-icon-42:before {
+    content: "\f045";
+}
+
+.woosq-icon-43:before {
+    content: "\f06e";
+}
+
+.woosq-icon-44:before {
+    content: "\f08e";
+}
+
+.woosq-icon-45:before {
+    content: "\f0d0";
+}
+
+.woosq-icon-50:before {
+    content: "\f104";
+}
+
+.woosq-icon-49:before {
+    content: "\f105";
+}
+
+.woosq-icon-48:before {
+    content: "\f140";
+}
+
+.woosq-icon-47:before {
+    content: "\f14c";
+}
+
+.woosq-icon-46:before {
+    content: "\f24d";
+}
+
+.woosq-icon-51:before {
+    content: "\e930";
+}
+
+.woosq-icon-52:before {
+    content: "\e931";
+}
+
+.woosq-icon-53:before {
+    content: "\e932";
+}
+
+.woosq-icon-54:before {
+    content: "\e933";
+}
+
+.woosq-icon-55:before {
+    content: "\e934";
+}
+
+.woosq-icon-56:before {
+    content: "\e935";
+}

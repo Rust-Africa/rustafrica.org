@@ -1,0 +1,42 @@
+#elementor-panel-get-pro-elements {
+	display: none !important;
+}
+#elementor-panel-elements-navigation .elementor-component-tab:first-child {
+	display: block;
+}
+#elementor-panel-categories {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+#elementor-panel-categories > div {
+	width: 100%;
+}
+#elementor-panel-category-case-theme-core {
+	order: -10;
+	width: 100%;
+}
+
+.elementor-icons-manager__tab__item {
+	height: 70px !important;
+}
+
+.elementor-icons-manager__tab__item__icon.zmdi {
+	font-size: 30px;
+}
+
+.elementor-panel .elementor-element .icon {
+	font-size: 27px !important;
+}
+
+#elementor-icons-manager__upload {
+	display: none !important;
+}
+
+.elementor-panel-category-items .icon i {
+    font-size: 34px !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+	min-width: 100px;
+}

@@ -1,0 +1,263 @@
+# Copyright (C) 2018 WooCommerce Smart Quick View
+# This file is distributed under the same license as the WooCommerce Smart Quick View package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Smart Quick View\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:"
+"1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-01 09:53+0000\n"
+"PO-Revision-Date: 2018-10-01 10:12+0000\n"
+"Last-Translator: rado <rado@gutding.org>\n"
+"Language-Team: Deutsch\n"
+"Language: de_DE\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: woo-smart-quick-view-premium/index.php:174,
+#: woo-smart-quick-view-premium/index.php:472
+msgid "View Product Details"
+msgstr "Zeige Produkt Details"
+
+#: woo-smart-quick-view-premium/index.php:192,
+#: woo-smart-quick-view-premium/index.php:194,
+#: woo-smart-quick-view-premium/index.php:214,
+#: woo-smart-quick-view-premium/index.php:217,
+#: woo-smart-quick-view-premium/index.php:219,
+#: woo-smart-quick-view-premium/index.php:284
+msgid "Quick view"
+msgstr "Schnellansicht"
+
+#: woo-smart-quick-view-premium/index.php:226,
+#: woo-smart-quick-view-premium/index.php:226
+msgid "Woo Quick View"
+msgstr "Woo Quick View"
+
+#: woo-smart-quick-view-premium/index.php:237
+msgid "Woo Smart Quick View"
+msgstr "Woo Smart Quick View"
+
+#: woo-smart-quick-view-premium/index.php:240
+msgid ""
+"Thank you for using our plugin! If you are satisfied, please reward it a "
+"full five-star %s rating."
+msgstr ""
+"Danke, dass Die unser Plugin benutzen. Falls Sie zufrieden sind, bewerten "
+"Sie uns bitte mit 5 Sternen %s."
+
+#: woo-smart-quick-view-premium/index.php:243
+msgid "Reviews"
+msgstr "Besprechungen"
+
+#: woo-smart-quick-view-premium/index.php:245
+msgid "Changelogs"
+msgstr "Changelogs"
+
+#: woo-smart-quick-view-premium/index.php:247
+msgid "Discussion"
+msgstr "Diskussionen"
+
+#: woo-smart-quick-view-premium/index.php:253,
+#: woo-smart-quick-view-premium/index.php:543
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: woo-smart-quick-view-premium/index.php:255
+msgid "Premium Support"
+msgstr "Premium Support"
+
+#: woo-smart-quick-view-premium/index.php:263
+msgid "General"
+msgstr "Allgemein"
+
+#: woo-smart-quick-view-premium/index.php:266
+msgid "Type"
+msgstr "Typ"
+
+#: woo-smart-quick-view-premium/index.php:271
+msgid "Button"
+msgstr "Schaltfläche"
+
+#: woo-smart-quick-view-premium/index.php:275
+msgid "Link"
+msgstr "Link"
+
+#: woo-smart-quick-view-premium/index.php:281
+msgid "Text"
+msgstr "Text"
+
+#: woo-smart-quick-view-premium/index.php:285
+msgid "button text"
+msgstr "Text auf Schaltfläche"
+
+#: woo-smart-quick-view-premium/index.php:289
+msgid "Extra class (optional)"
+msgstr "Extra Klasse (optional)"
+
+#: woo-smart-quick-view-premium/index.php:294
+msgid "Add extra class for action button/link, split by one space."
+msgstr ""
+"Eine extra Klasse für Schaltflächen / Links zufügen (trennen mit einem "
+"Leerzeichen)."
+
+#: woo-smart-quick-view-premium/index.php:299
+msgid "Button position"
+msgstr "Position Schaltfläche"
+
+#: woo-smart-quick-view-premium/index.php:304
+msgid "After title"
+msgstr "Hinter \"Titel\""
+
+#: woo-smart-quick-view-premium/index.php:308
+msgid "After rating"
+msgstr "Hinter \"Bewertung\""
+
+#: woo-smart-quick-view-premium/index.php:312
+msgid "After price"
+msgstr "Hinter \"Preis\""
+
+#: woo-smart-quick-view-premium/index.php:316
+msgid "Before add to cart"
+msgstr "Vor \"in den Warenkorb\""
+
+#: woo-smart-quick-view-premium/index.php:320
+msgid "After add to cart"
+msgstr "Hinter \"in den Warenkorb\""
+
+#: woo-smart-quick-view-premium/index.php:324
+msgid "None"
+msgstr "Nichts"
+
+#: woo-smart-quick-view-premium/index.php:330
+msgid "Button shortcode"
+msgstr "Shortcode für Schaltfläche"
+
+#: woo-smart-quick-view-premium/index.php:333
+msgid ""
+"You can add the button by manually, please use the shortcode %s, eg. %s for "
+"the product with ID is 99."
+msgstr ""
+"Um die Schaltfläche manuell hinzuzufügen, benutzen Sie bitte den Shortcode "
+"%s, z.B. %s für das Produkt mit der ID 99."
+
+#: woo-smart-quick-view-premium/index.php:338
+msgid "Popup effect"
+msgstr "Popup Effekt"
+
+#: woo-smart-quick-view-premium/index.php:343
+msgid "Fade"
+msgstr "Einblenden"
+
+#: woo-smart-quick-view-premium/index.php:347
+msgid "Zoom in"
+msgstr "Einzoomen"
+
+#: woo-smart-quick-view-premium/index.php:351
+msgid "Zoom out"
+msgstr "Herauszoomen"
+
+#: woo-smart-quick-view-premium/index.php:355
+msgid "Newspaper"
+msgstr "Zeitung"
+
+#: woo-smart-quick-view-premium/index.php:359
+msgid "Move horizontal"
+msgstr "Horizontal bewegen"
+
+#: woo-smart-quick-view-premium/index.php:363
+msgid "Move from top"
+msgstr "Von oben bewegen"
+
+#: woo-smart-quick-view-premium/index.php:367
+msgid "3d unfold"
+msgstr "3D-Effekt"
+
+#: woo-smart-quick-view-premium/index.php:371
+msgid "Slide bottom"
+msgstr "von unten gleiten"
+
+#: woo-smart-quick-view-premium/index.php:377
+msgid "Content"
+msgstr "Inhalt"
+
+#: woo-smart-quick-view-premium/index.php:380
+msgid "Images"
+msgstr "Bilder"
+
+#: woo-smart-quick-view-premium/index.php:385
+msgid "Product image & Product gallery images"
+msgstr "Produkt Bilder & Produkt-Galerie-Bilder"
+
+#: woo-smart-quick-view-premium/index.php:389
+msgid "Product image"
+msgstr "Produkt Bilder"
+
+#: woo-smart-quick-view-premium/index.php:393
+msgid "Product gallery images"
+msgstr "Produkt-Galerie-Bilder"
+
+#: woo-smart-quick-view-premium/index.php:399
+msgid "Lightbox for images"
+msgstr "Lightbox für Bilder"
+
+#: woo-smart-quick-view-premium/index.php:404,
+#: woo-smart-quick-view-premium/index.php:459
+msgid "No"
+msgstr "Nein"
+
+#: woo-smart-quick-view-premium/index.php:408,
+#: woo-smart-quick-view-premium/index.php:463
+msgid "Yes"
+msgstr "Ja"
+
+#: woo-smart-quick-view-premium/index.php:414
+msgid "Product summary"
+msgstr "Produkt Zusammenfassung"
+
+#: woo-smart-quick-view-premium/index.php:423
+msgid "Title"
+msgstr "Titel"
+
+#: woo-smart-quick-view-premium/index.php:428
+msgid "Rating"
+msgstr "Bewertung"
+
+#: woo-smart-quick-view-premium/index.php:433
+msgid "Price"
+msgstr "Preis"
+
+#: woo-smart-quick-view-premium/index.php:438
+msgid "Excerpt"
+msgstr "Auszug"
+
+#: woo-smart-quick-view-premium/index.php:443
+msgid "Add to cart"
+msgstr "In den Warenkorb"
+
+#: woo-smart-quick-view-premium/index.php:448
+msgid "Meta"
+msgstr "Meta"
+
+#: woo-smart-quick-view-premium/index.php:454
+msgid "View details button"
+msgstr "Zeige Detail-Schaltfläche"
+
+#: woo-smart-quick-view-premium/index.php:469
+msgid "View details text"
+msgstr "Zeige Details Text"
+
+#: woo-smart-quick-view-premium/index.php:480
+msgid "Update Options"
+msgstr "Optionen aktualisieren"
+
+#: woo-smart-quick-view-premium/index.php:557
+msgid "Premium support"
+msgstr "Premium Support"
