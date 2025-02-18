@@ -46,7 +46,7 @@ jobs:
       id-token: write
 
     environment:
-      name: github-pages
+      name: hostinger
       url: ${{ steps.deployment.outputs.page_url }}
 
     runs-on: ubuntu-latest
