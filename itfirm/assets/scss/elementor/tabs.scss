@@ -1,0 +1,191 @@
+.ct-tabs {
+	.ct-grid {
+		.grid-item {
+			position: static !important;
+		}
+		.ct-grid-masonry {
+			height: auto !important;
+		}
+	}
+	.ct-tab-title i {
+		margin: 0 4px;
+		color: $primary_color;
+	}
+}
+.ct-tabs1 {
+	.ct-tab-content {
+        display: none;
+    }
+    .ct-tabs-title {
+    	border-bottom: 3px solid #ebebeb;
+    	display: flex;
+		flex-wrap: wrap;
+    	.ct-tab-title {
+    		font-size: 17px;
+			color: #1a1a1a;
+			font-weight: 700;
+			line-height: 47px;
+			padding: 0 15px;
+			margin-right: 12px;
+			position: relative;
+			cursor: pointer;
+			@include transition(.3s cubic-bezier(.24,.74,.58,1));
+			@media #{$max-lg} {
+				margin-right: 0;
+			}
+			@media #{$max-sm} {
+				font-size: 15px;
+				padding: 0 10px;
+			}
+			&:before {
+				content: '';
+				width: 0;
+				left: 0;
+				right: 0;
+				margin: auto;;
+				bottom: -3px;
+				height: 3px;
+				position: absolute;
+				background-color: $primary_color;
+				@include transition(.3s cubic-bezier(.24,.74,.58,1));
+			}
+    		&:hover, &.active {
+    			color: $primary_color;
+    			&:before {
+    				width: 100%;
+    			}
+    		}
+    	}
+    }
+    .ct-tabs-content {
+    	font-size: 17px;
+		color: #888;
+		line-height: 1.588;
+		padding-top: 20px;
+		padding-right: 5%;
+		@media #{$max-lg} {
+			padding-right: 0px;
+		}
+    }
+}
+
+.ct-tabs2 {
+	.ct-widget-title {
+		color: #333;
+		font-size: 42px;
+		line-height: 1.4;
+		margin-bottom: 23px;
+		@media #{$max-lg} {
+			font-size: 36px;
+		}
+		@media #{$max-sm} {
+			font-size: 30px;
+		}
+	}
+	.ct-widget-desc {
+		line-height: 1.5;
+		color: #666666;
+		margin-bottom: 20px;
+	}
+	.ct-tab-content {
+        display: none;
+    }
+    .ct-tabs--main {
+    	margin: 0 -25px;
+    	display: flex;
+		flex-wrap: wrap;
+		@media #{$max-lg} {
+			margin: 0 -15px;
+		}
+    	> div {
+    		padding: 0 25px;
+    		width: 50%;
+    		@media #{$max-lg} {
+				padding: 0 15px;
+			}
+			@media #{$max-sm} {
+				width: 100%;
+			}
+    	}
+    }
+    .ct-tabs-title {
+    	list-style: none;
+    	margin-bottom: 0;
+    	@media #{$max-sm} {
+			margin-bottom: 24px;
+		}
+    	span {
+    		font-size: 18px;
+    		color: #333333;
+    		@include font-family-heading($heading_default_font);
+    		font-weight: 700;
+    		display: inline-block;
+    		padding-left: 60px;
+    		position: relative;
+    		cursor: pointer;
+    		@include transition(.3s cubic-bezier(.24,.74,.58,1));
+    		&:before {
+    			content: '';
+    			width: 50px;
+    			height: 3px;
+    			background-color: #333333;
+    			@include transition(.3s cubic-bezier(.24,.74,.58,1));
+    			position: absolute;
+    			top: 50%;
+    			@include transform(translate(0, -50%));
+    			left: 0;
+    		}
+    		&.active {
+    			color: $primary_color;
+    			&:before {
+    				background-color: $primary_color;
+    			}
+    		}
+    	}
+    	li + li {
+    		margin-top: 9px;
+    	}
+    }
+}
+
+.ct-tabs3 {
+	.ct-tab-content {
+        display: none;
+    }
+	.ct-tabs-title {
+		border-top: 2px solid #efeff2;
+		border-bottom: 2px solid #efeff2;
+		text-align: center;
+		margin-bottom: 65px;
+		.ct-tab-title {
+			font-size: 16px;
+			font-weight: 700;
+			color: #67687a;
+			position: relative;
+			margin: 0 35px;
+			line-height: 74px;
+			display: inline-block;
+			cursor: pointer;
+			&:before {
+				content: '';
+				width: 0px;
+				height: 6px;
+				@include background-horizontal-right($gradient_color_from, $gradient_color_to);
+				position: absolute;
+				bottom: -2px;
+				left: 50%;
+				transform: translate(-50%, 0);
+				@include transition(.3s cubic-bezier(.24,.74,.58,1));
+			}
+			i {
+				@extend .text-gradient;
+				font-size: 22px;
+			}
+			&:hover, &.active {
+				&:before {
+					width: 95px;
+				}
+			}
+		}
+	}
+}

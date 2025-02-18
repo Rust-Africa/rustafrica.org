@@ -1,0 +1,114 @@
+.ct-accordion-icon-plus {
+	width: 21px;
+	height: 21px;
+	position: relative;
+	&:before, &:after {
+		content: '';
+		background-color: #333;
+		@include border-radius(3px);
+		position: absolute;
+		@include transition(.3s cubic-bezier(.24,.74,.58,1));
+	}
+	&:before {
+		width: 3px;
+		height: 21px;
+		top: 0;
+		left: 9px;
+	}
+	&:after {
+		height: 3px;
+		width: 21px;
+		top: 9px;
+		left: 0;
+	}
+}
+.ct-accordion1 {
+	.ct-accordion-icon-plus {
+		position: absolute;
+		top: 50%;
+		right: 14px;
+		@include transform(translate(0, -50%));
+		z-index: 99;
+	}
+	.ct-ac-content {
+		display: none;
+		color: #888888;
+		line-height: 1.5;
+		padding-top: 20px;
+	}
+	.ct-ac-title {
+		position: relative;
+		@include font-family-heading($heading_default_font);
+		.ct-ac-title-text {
+			font-size: 20px;
+			font-weight: 700;
+			color: #666;
+			border: 1px solid #888;
+			@include border-radius(5px);
+			padding: 13px 50px 13px 20px;
+			display: block;
+			cursor: pointer;
+			@media #{$max-lg} {
+				font-size: 18px;
+			}
+			@media #{$max-sm} {
+				font-size: 16px;
+			}
+		}
+		&.active .ct-ac-title-text, &:hover .ct-ac-title-text {
+			color: #fff;
+			background-color: $primary_color;
+			border-color: $primary_color;
+			.ct-accordion-icon-plus {
+				&:before {
+					transform: rotate(90deg);
+					opacity: 0;
+				}
+				&:before, &:after {
+					background-color: #fff;
+				}
+			}
+		}
+	}
+	.ct-accordion-item {
+		+ .ct-accordion-item {
+			margin-top: 20px;
+		}
+	}
+	&.style2 {
+		.ct-ac-title {
+			.ct-ac-title-text {
+				background-color: #fafafa;
+				border-color: #eaeaea;
+				font-size: 18px;
+				font-weight: 600;
+				color: #08203a;
+			}
+			&.active .ct-ac-title-text, &:hover .ct-ac-title-text {
+				color: #fff;
+				background-color: $primary_color;
+				border-color: $primary_color;
+			}
+		}
+		.ct-ac-content {
+			color: #666;
+			line-height: 1.6;
+		}
+		.ct-accordion-icon-plus {
+			width: 14px;
+			height: 14px;
+			&:before {
+				width: 2px;
+				height: 14px;
+				top: 0;
+				left: 6px;
+			}
+			&:after {
+				height: 2px;
+				width: 14px;
+				top: 6px;
+				left: 0;
+			}
+		}
+	}
+}

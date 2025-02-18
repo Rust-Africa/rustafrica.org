@@ -1,0 +1,273 @@
+/* Header Main */
+@media #{$min-xl} {
+	#ct-header-default {
+		.row {
+			align-items: center;
+		}
+		.ct-header-branding {
+			height: 110px;
+			position: relative;
+			padding-right: 90px;
+			padding-top: 24px;
+			padding-bottom: 24px;
+			padding-left: 45px;
+			z-index: 1;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+				@include background-horizontal-right($gradient_color_from, $gradient_color_to);
+				@include transform(skewX(25deg));
+				display: block;
+				right: 30px;
+			}
+			img {
+				max-height: 65px;
+				max-width: inherit;
+			}
+		}
+		.ct-header-navigation {
+			flex-grow: 1;
+			padding-left: 30px;
+			padding-right: 60px;
+		}
+		.ct-main-menu > li {
+			> a {
+				line-height: 110px;
+				color: #000;
+				&:before {
+					content: '';
+					width: 0;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					height: 5px;
+					@include background-horizontal-right($gradient_color_from, $gradient_color_to);
+					@include transition(.3s cubic-bezier(.24,.74,.58,1));
+				}
+			}
+			&:hover > a,
+            &.current_page_item > a:not(.is-one-page),
+            &.current-menu-item > a:not(.is-one-page),
+            &.current_page_ancestor > a:not(.is-one-page),
+            &.current-menu-ancestor > a:not(.is-one-page) {
+            	&:before {
+            		width: 100%;
+            	}
+            }
+			&.menu-item-has-children > a, &.page_item_has_children > a {
+                padding-right: 15px;
+                &:after {
+                    content: "\f102";
+                    font-family: Caseicon;
+                    font-size: 9px;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    @include transform(translate(0, -50%));
+                }
+            }
+		}
+		.logo-mobile {
+			display: none;
+		}
+		.ct-header-main {
+			> .container {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+#ct-header-elementor {
+	.elementor-widget, .elementor-widget-wrap, .elementor-column, .elementor-column-wrap {
+		position: static;
+	}
+	.ct-header-mobile {
+		display: none;
+	}
+	.ct-header-elementor-sticky {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 999;
+		top: 0;
+		@include transform(translateY(-100%));
+		@include transition(.6s cubic-bezier(.24,.74,.58,1));
+		visibility: hidden;
+		&.h-fixed {
+			@include transform(translateY(0%));
+			visibility: visible;
+			@include box-shadow(0 3px 18px rgba(#02154e, 0.09));
+		}
+	}
+	.ct-header-elementor-main {
+		position: relative;
+		z-index: 999;
+	}
+	.ct-header-fixed-transparent-wrap {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		z-index: 999;
+	}
+}
+
+@media #{$max-lg} {
+	#ct-header-elementor {
+		.ct-header-elementor-main, .ct-header-elementor-sticky {
+			display: none;
+		}
+		.ct-header-mobile {
+			display: block;
+		}
+	}
+	#ct-header-default, .ct-header-mobile {
+		position: relative;
+		@include box-shadow(0 0px 5px rgba(0, 0, 0, 0.15));
+		.logo-light {
+			display: none;
+		}
+		.ct-header-main {
+			position: relative;
+		}
+		.ct-header-branding {
+			margin: 15px;
+			min-height: 50px;
+			align-items: center;
+			display: flex;
+			img {
+				max-height: 50px;
+			}
+		}
+		#ct-menu-mobile {
+			position: absolute;
+			top: 50%;
+			right: 15px;
+			@include transform(translate(0,-50%));
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			.ct-mobile-meta-item {
+				margin-left: 10px;
+			}
+		}
+	}
+	.ct-header-mobile.mobile-sticky {
+		padding-top: 0;
+		background-color: #fff;
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		@include animation(0.95s ease 0s normal forwards 1 running headerSlideDown);
+		z-index: 999;
+	}
+}
+
+.admin-bar #ct-header-elementor .ct-header-elementor-sticky.h-fixed {
+	top: 32px;
+	@media screen and (max-width: 782px) {
+		top: 46px;
+	}
+	@media screen and (max-width: 600px) {
+		top: 0;
+	}
+}
+/* End Header Main */
+
+.ct-cursor {
+	visibility: hidden;
+	position: fixed;
+	pointer-events: none;
+	z-index: 10000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@include transition(transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1));
+	pointer-events: none;
+	top: 0;
+	left: 0;
+	.ct-cursor-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include transition(transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1));
+	}
+	.ct-cursor--follower {
+		position: absolute;
+		background-color: $primary_color;
+		opacity: 0.35;
+		border-radius: 100%;
+		width: 1.5rem;
+		height: 1.5rem;
+		@include transition(transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), background-color 0.1s cubic-bezier(0.165, 0.84, 0.44, 1));
+	}
+	.ct-cursor--label {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		letter-spacing: 0.05em;
+		transform: scale(0);
+		will-change: transform, opacity;
+		@include transition(transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1));
+	}
+	.ct-cursor--icon {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		transform: scale(0);
+		will-change: transform, opacity;
+		@include transition(transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 500ms cubic-bezier(0.165, 0.84, 0.44, 1));
+		color: rgba(#fff, 0.76);
+		&:before {
+			content: "\f121";
+			font-family: Caseicon;
+			font-size: 24px;
+		}
+	}
+	&.is-enabled {
+		visibility: visible;
+	}
+	&.is-hidden .ct-cursor-wrapper {
+	  transform: scale(0) !important;
+	}
+	&.is-mouse-down .ct-cursor-wrapper {
+	  transform: scale(0.8);
+	}
+	&.is-active .ct-cursor--follower {
+		@include box-shadow(0 0 8px 0 rgba(0, 0, 0, 0.7));
+		@include transform(scale(3.6));
+		opacity: 0;
+	}
+	&.is-active.has-label .ct-cursor--follower {
+	  background-color: black;
+	  opacity: 0.8;
+	}
+
+	&.is-active.has-label .ct-cursor--label {
+	  transform: scale(1);
+	}
+
+	&.is-active.has-icon .ct-cursor--follower {
+	  background-color: black;
+	  opacity: 0.8;
+	}
+
+	&.is-active.has-icon .ct-cursor--icon {
+	  transform: scale(1);
+	}
+}

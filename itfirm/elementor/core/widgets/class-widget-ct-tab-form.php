@@ -1,0 +1,11 @@
+<?php
+
+class CT_CtTabForm_Widget extends Case_Theme_Core_Widget_Base{
+    protected $name = 'ct_tab_form';
+    protected $title = 'Tab Form';
+    protected $icon = 'eicon-tabs';
+    protected $categories = array( 'case-theme-core' );
+    protected $params = '{"sections":[{"name":"layout_section","label":"Layout","tab":"layout","controls":[{"name":"layout","label":"Templates","type":"layoutcontrol","default":"1","options":{"1":{"label":"Layout 1","image":"http:\/\/localhost\/ctthemes\/alc\/wp-content\/themes\/alc\/elementor\/templates\/widgets\/ct_tab_form\/layout-image\/layout1.jpg"},"2":{"label":"Layout 2","image":"http:\/\/localhost\/ctthemes\/alc\/wp-content\/themes\/alc\/elementor\/templates\/widgets\/ct_tab_form\/layout-image\/layout2.jpg"}}}]},{"name":"section_tabs","label":"Tabs","tab":"content","controls":[{"name":"active_tab","label":"Active Tab","type":"number","default":1,"separator":"after"},{"name":"tabs","label":"Tab Items","type":"repeater","controls":[{"name":"icon_type","label":"Icon Type","type":"select","options":{"icon":"Icon","image":"Image"},"default":"icon"},{"name":"selected_icon","label":"Icon","type":"icons","fa4compatibility":"icon","condition":{"icon_type":"icon"}},{"name":"icon_image","label":"Icon Image","type":"media","description":"Select image icon.","condition":{"icon_type":"image"}},{"name":"tab_title","label":"Tab Title","type":"text","default":"Tab Title","placeholder":"Tab Title","label_block":true},{"name":"tab_title_bgcolor","label":"Tab Title Background Color","type":"color"},{"name":"fancybox_title","label":"Fancy Box Title","type":"text","label_block":true},{"name":"fancybox_icon","label":"Fancy Box Image","type":"media","description":"Select image icon."},{"name":"fancybox_desc","label":"Fancy Box Description","type":"textarea","label_block":true},{"name":"form_id","label":"Select Contact Form 7","type":"select","options":{"3274":"Get a quote","2529":"Tab Form","1930":"Business Insurance Form","1929":"Life Insurance Form","1928":"Vehicles Insurance Form","1924":"House Insurance Form","1913":"FAQ Contact Form","5":"Main Contact Form"}}],"title_field":"{{{ tab_title }}}"}]}]}';
+    protected $styles = array(  );
+    protected $scripts = array( 'ct-tabs-widget-js' );
+}
