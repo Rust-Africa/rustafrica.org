@@ -1,0 +1,55 @@
+name: publish
+ 
+on:
+  push:
+    branches: [ main ]
+
+  pull_request:
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: '14.x'
+
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - run: npm ci
+      - run: npm run build
+      - run: echo rustafrica.org > _site/CNAME
+
+      - uses: actions/upload-pages-artifact@v1.0.9
+        with:
+          path: ./_site
+
+  deploy:
+    if: ${{ github.ref == 'refs/heads/main' }}
+
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v2.0.2
